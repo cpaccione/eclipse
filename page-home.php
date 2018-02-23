@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Eclipse home
+Template Name: Eclipse Home
 
 */
 
