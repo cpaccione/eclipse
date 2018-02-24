@@ -1,0 +1,52 @@
+.fa-code,
+.fa-wordpress,
+.fa-mobile {
+  color: $dark-blue;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
+}
+
+.fa-code:hover,
+.fa-wordpress:hover,
+.fa-mobile:hover {
+  color: $light-blue;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
+}
+
+.fa {
+  color: $white;
+  color: $dark-blue;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
+}
+
+.fa:hover {
+  color: $light-blue;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
+}
+
+.fa-minus {
+  color: $light-blue;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  //color: $white;
+  color: $dark-blue;
+}
+
+.bxslider .fa-quote-left,
+.bxslider .fa-quote-right {
+  font-size: 1.5em;
+  color: $light-blue;
+}

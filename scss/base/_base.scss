@@ -1,0 +1,137 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $white;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Dosis', sans-serif;
+}
+
+.circle {
+	border-radius: 50%;
+	max-width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+// logged in
+
+a {
+	color: $light-blue;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
+
+	&:hover {
+		//text-decoration: underline;
+		text-decoration: none;
+		color: $dark-blue;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
+	}
+}
+
+// Blog Styles
+
+ul.blog-info {
+
+	padding-left: 0px;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding-left: 0px;
+		padding-right: 1em;
+	}
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+// Contact Form 7
+
+.contact-wrap {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 0 50px 0;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+}
+
+.wpcf7 {
+	label {
+		display: inherit;
+		max-width: inherit;
+		margin-bottom: inherit;
+    font-weight: inherit;
+	}
+}
+
+.wpcf7 input[type="submit"] {
+		background-color: $white;
+		color: $dark-blue;
+		border-radius: 0;
+		box-shadow: none;
+		border-width: 1px;
+		border-color: #204d74;
+		padding: 10px 16px;
+		font-size: 18px;
+		width: 30%;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
+
+		&:hover {
+			background-color: $light-blue;
+			-webkit-transition: ease-out 200ms;
+			-moz-transition: ease-out 200ms;
+			-o-transition: ease-out 200ms;
+			transition: ease-out 200ms;
+		}
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+color: $grey-two !important;
+opacity: 1;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: $grey-two !important;
+opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: $grey-two !important;
+opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: $grey-two !important;
+opacity: 1;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0,0,0,.1);
+}

@@ -1,0 +1,107 @@
+.wpcf7 input[type="submit"],
+.btn-primary.active {
+	background-color: transparent;
+	font-size: 0.9375em;
+	text-transform: uppercase;
+	color: $dark-blue;
+	border-radius: 25px;
+	line-height: 15px;
+	padding: 15px 38px 15px 38px;
+	display: inline-block;
+	box-shadow: none;
+	border: 2px solid $dark-blue;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
+
+	&:hover {
+		background-color: $light-blue;
+		background-color: $dark-blue;
+		border: 2px solid $light-blue;
+		color: $white;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
+	}
+}
+
+.btn-primary.btn-block {
+	background-color: $dark-blue;
+	color: $white;
+	border-color: $dark-blue;
+	border-radius: 0;
+
+	h3, .fa {
+		color: $white;
+		margin-bottom: 0;
+		padding: 10px 0 10px 0;
+	}
+
+	&:hover {
+		background-color: $light-blue;
+		border-color: $light-blue;
+		cursor: pointer;
+	}
+}
+
+// .button-wrap {
+// 	width: 30%;
+// 	margin: inherit;
+// 	margin-bottom: 50px;
+//
+// 	@include respond-to(max-width, 768px) {
+// 		margin-bottom: 0;
+// 	}
+//
+// 	@include respond-to(max-width, 500px) {
+// 		width: 50%;
+// 	}
+//
+// 	button {
+// 		box-shadow: none;
+// 		border: 2px solid $dark-blue;
+// 		cursor: pointer;
+//
+// 		&:hover {
+// 			color: $white;
+// 		}
+// 	}
+// }
+
+
+.portfolio-single-navigation {
+	// text-align: center;
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		display: inline;
+		padding-right: 50px;
+
+		a {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-decoration: underline;
+			color: $dark-blue;
+			-webkit-transition: ease-out 200ms;
+			-moz-transition: ease-out 200ms;
+			-o-transition: ease-out 200ms;
+			transition: ease-out 200ms;
+
+			&:hover {
+				color: $light-blue;
+				-webkit-transition: ease-out 200ms;
+				-moz-transition: ease-out 200ms;
+				-o-transition: ease-out 200ms;
+				transition: ease-out 200ms;
+			}
+		}
+	}
+}
+
+.home-page-button {
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+}
