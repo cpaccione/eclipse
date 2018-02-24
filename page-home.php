@@ -18,7 +18,7 @@ Template Name: Eclipse Home
 <?php get_header(); ?>
 
 <!-- home hero -->
-<section class="home-hero">
+<section class="home-hero d-flex align-items-center">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -33,12 +33,14 @@ Template Name: Eclipse Home
 <section class="intro">
 	<div class="container">
 		<div class="row">
-      <div class="col-12">
-        <ul>
-          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources"></li>
-          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources"></li>
-          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources"></li>
-        </ul>
+      <div class="col-sm-4">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources">
+      </div>
+      <div class="col-sm-4">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources">
+      </div>
+      <div class="col-sm-4">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
       </div>
 		</div>
 		<div class="row">

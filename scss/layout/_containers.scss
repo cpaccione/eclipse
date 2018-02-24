@@ -3,16 +3,22 @@
   background: $blue;
   background: linear-gradient($blue-gradient, $blue);
   height: 567px;
+  text-align: center;
 }
 
 // home tempate intro
 .intro {
+  img {
+    margin: 0 auto;
+    display: block;
+  }
   ul {
     padding: 0;
     text-align: center;
 
     li {
       display: inline;
+      margin-right: 15px;
     }
   }
 }

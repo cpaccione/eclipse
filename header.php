@@ -38,7 +38,7 @@
 
 		<div class="main">
 
-		<header class="navbar flex-row" id="masthead" class="site-header">
+		<header class="navbar fixed-top flex-row" id="masthead" class="site-header">
 
 			<div class="navbar-brand site-branding">
 						<?php
