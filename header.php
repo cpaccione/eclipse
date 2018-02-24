@@ -21,22 +21,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eclipse' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eclipse-logo.svg" alt="Eclipse Global Resources"></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eclipse-logo.svg" alt="Eclipse Global Resources"></a></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-	  <a id="nav-toggle" href="#!" class="position"><span></span></a>
-	</header><!-- #masthead -->
 
 	<aside class="off-canvas-menu">
 		<nav>
@@ -49,4 +33,22 @@
 		</nav>
 	</aside>
 
-	<div class="main">
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eclipse' ); ?></a>
+
+		<div class="main">
+
+		<header class="navbar fixed-top flex-row" id="masthead" class="site-header">
+
+			<div class="navbar-brand site-branding">
+						<?php
+						the_custom_logo();
+						if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eclipse-logo.svg" alt="Eclipse Global Resources"></a></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eclipse-logo.svg" alt="Eclipse Global Resources"></a></p>
+						<?php endif; ?>
+			</div><!-- .site-branding -->
+			<a id="nav-toggle"><span></span></a>
+
+		</header><!-- #masthead -->

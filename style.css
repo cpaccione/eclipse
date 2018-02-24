@@ -18,6 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Nav icon positioning */
 
 .position {
+  position: fixed;
   position: absolute;
   top: 28px;
   right: 20px;
@@ -25,11 +26,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   z-index: 2;
 }
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   .position {
     position: fixed;
   }
-}
+} */
 
 #nav-toggle {
   cursor: pointer;
@@ -104,6 +105,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .off-canvas-menu nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .off-canvas-menu nav ul li:first-of-type {
@@ -131,9 +133,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .show-nav .main {
   transform: translateX(-250px);
 }
-.show-nav .position {
+/* .show-nav .position {
   position: fixed;
-}
+  position: absolute;
+} */
 
 .show-nav article {
   padding: 0 80px;
