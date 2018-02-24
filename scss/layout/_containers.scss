@@ -9,7 +9,7 @@
   ul {
     padding: 0;
     text-align: center;
-    
+
     li {
       display: inline;
     }
@@ -45,13 +45,15 @@
       padding: 0;
       text-align: center;
       display: block;
+      margin: 0 auto;
 
       li {
-        display: inline;
+        display: inline-block;
 
         img {
           width: 150px;
           height: 150px;
+          display: block;
         }
       }
     }
