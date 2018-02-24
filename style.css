@@ -97,7 +97,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   right: -250px;
   background: #343434;
   font-size: .8em;
-  font-family: sans-serif;
   font-weight: 300;
   transition: all .3s ease;
 }
@@ -129,7 +128,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* JavaScript toggle */
 
 .show-nav .off-canvas-menu,
-.show-nav .position,
+/* .show-nav .position, */
 .show-nav .main {
   transform: translateX(-250px);
 }
