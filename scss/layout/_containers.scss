@@ -1,10 +1,11 @@
-// eclipse home
+// ECG home page template
 .home-hero {
   background: $blue;
   background: linear-gradient($blue-gradient, $blue);
   height: 567px;
 }
 
+// home tempate intro
 .intro {
   ul {
     padding: 0;
@@ -16,6 +17,7 @@
   }
 }
 
+// background image section one
 .home-bg-one {
   background-image: url('../images/home-bg-one.jpg');
   background-size: cover;
@@ -23,6 +25,7 @@
   height: 380px;
 }
 
+// background image section two
 .home-bg-two {
   background-image: url('../images/home-bg-two.jpg');
   background-size: cover;
@@ -30,6 +33,7 @@
   height: 380px;
 }
 
+// background image section three
 .home-bg-three {
   background-image: url('../images/home-bg-three.jpg');
   background-size: cover;
@@ -37,6 +41,7 @@
   height: 380px;
 }
 
+// home tempate solutions
 .home-solutions {
 
   .icon-row {
