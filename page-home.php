@@ -13,46 +13,81 @@ Template Name: Eclipse Home
  *
  * @package eclipse
  */
+ ?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<!-- home hero -->
+<section class="home-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-logo.svg" alt="Eclipse Global Resources">
+				<h2>global resources</h2>
+			</div>
+		</div>
+	</div>
+</section>
 
-		<?php
-		if ( have_posts() ) :
+<!-- intro -->
+<section class="intro">
+	<div class="container">
+		<div class="row">
+      <div class="col-12">
+        <ul>
+          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources"></li>
+          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources"></li>
+          <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources"></li>
+        </ul>
+      </div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2>headline</h2>
+				<p>With a combined 25+ years of experience in the wireless and technology industries, our range includes staffing, services, and vendor management with a focus on IT, Engineering, and Project/Program Management.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+<section class="home-bg-one"></section>
 
-			<?php
-			endif;
+<section class="home-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>our solutions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="row icon-row">
+      <ul>
+        <li>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
+        </li>
+        <li>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
+        </li>
+        <li>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+<section class="home-bg-two"></section>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+<section class="home-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
 
-			endwhile;
+      </div>
+    </div>
+  </div>
+</section>
 
-			the_posts_navigation();
+<section class="home-bg-three"></section>
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
