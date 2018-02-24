@@ -61,23 +61,25 @@ Template Name: Eclipse Home
       </div>
     </div>
     <div class="row icon-row">
-      <ul>
-        <li>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-          <h3>Staffing Solutions</h3>
-          <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-        </li>
-        <li>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-          <h3>Service Solutions</h3>
-          <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-        </li>
-        <li>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
-          <h3>Strategic Solutions</h3>
-          <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-        </li>
-      </ul>
+      <div class="col-12">
+        <ul>
+          <li>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
+            <h3>Staffing Solutions</h3>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+          </li>
+          <li>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
+            <h3>Service Solutions</h3>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+          </li>
+          <li>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
+            <h3>Strategic Solutions</h3>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
