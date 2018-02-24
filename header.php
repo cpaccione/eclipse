@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eclipse' ); ?></a>
 
-	<header class="container" id="masthead" class="site-header">
+	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -38,7 +38,7 @@
 	  <a id="nav-toggle" href="#!" class="position"><span></span></a>
 	</header><!-- #masthead -->
 
-	<aside>
+	<aside class="off-canvas-menu">
 		<nav>
 			<?php
 				wp_nav_menu( array(
@@ -48,3 +48,5 @@
 			?>
 		</nav>
 	</aside>
+
+	<div class="main">

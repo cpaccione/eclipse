@@ -81,14 +81,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 /* Off Canvas Navigation */
 
-main {
+.main {
   width: 100%;
   position: absolute;
   left: 0;
   transition: .3s ease all;
 }
 
-aside {
+.off-canvas-menu {
   width: 250px;
   height: 100%;
   position: fixed;
@@ -101,39 +101,34 @@ aside {
   transition: all .3s ease;
 }
 
-aside p {
-  color: #cdcdcd;
-  padding: 20px;
-}
-
-aside nav ul {
+.off-canvas-menu nav ul {
   margin: 0;
   padding: 0;
 }
 
-aside nav ul li:first-of-type {
+.off-canvas-menu nav ul li:first-of-type {
   border-top: 1px solid #565656;
 }
 
-aside nav ul li {
+.off-canvas-menu nav ul li {
   border-bottom: 1px solid #565656;
 }
 
-aside nav ul li a {
+.off-canvas-menu nav ul li a {
   padding: 10px 20px;
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-aside nav ul li a:hover {
+.off-canvas-menu nav ul li a:hover {
   background: #454545;
 }
 /* JavaScript toggle */
 
-.show-nav aside,
+.show-nav .off-canvas-menu,
 .show-nav .position,
-.show-nav main {
+.show-nav .main {
   transform: translateX(-250px);
 }
 .show-nav .position {
