@@ -79,6 +79,7 @@ Template Name: Eclipse Home
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
             <h3>Staffing Solutions</h3>
             <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+            <button type="button" name="button">learn more</button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -86,6 +87,7 @@ Template Name: Eclipse Home
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
             <h3>Service Solutions</h3>
             <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+            <button type="button" name="button">learn more</button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -93,6 +95,7 @@ Template Name: Eclipse Home
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
             <h3>Strategic Solutions</h3>
             <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+            <button type="button" name="button">learn more</button>
           </div>
         </div>
       </div>
