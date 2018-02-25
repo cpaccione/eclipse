@@ -1,26 +1,40 @@
 // ECG home page template
 .home-hero {
   background: $blue;
-  background: linear-gradient($blue-gradient, $blue);
+  background: linear-gradient($blue, $blue-gradient);
   height: 567px;
   text-align: center;
+
+  .hero-logo {
+    max-width: 794px;
+  }
+}
+
+.intro-images {
+  padding: 75px 0 0 0;
+
+  ul {
+    padding: 0;
+    text-align: center;
+    margin-top: -175px;
+
+    li {
+      padding-right: 15px;
+      display: inline-block;
+    }
+  }
 }
 
 // home tempate intro
 .intro {
-  img {
-    margin: 0 auto;
-    display: block;
-  }
-  ul {
-    padding: 0;
-    text-align: center;
+  text-align: center;
+  height: 300px;
 
-    li {
-      display: inline;
-      margin-right: 15px;
-    }
+  .wrap {
+    max-width: 690px;
+    margin: 0 auto;
   }
+
 }
 
 // background image section one
@@ -48,25 +62,36 @@
 }
 
 // home tempate solutions
+.home-solutions-background {
+  background: $blue;
+  background: linear-gradient($blue, $blue-gradient);
+}
+
+.home-solutions-copy {
+  height: 300px;
+  text-align: center;
+}
+
 .home-solutions {
 
   .icon-row {
-
-    ul {
-      padding: 0;
+    .wrap {
       text-align: center;
-      display: block;
-      margin: 0 auto;
+      background-color: $white;
+      border-radius: 8px;
+      height: 338px;
 
-      li {
-        text-align: center;
-
-        img {
-          width: 150px;
-          height: 150px;
-          display: block;
-        }
+      img {
+        width: 150px;
+        height: 150px;
+        // display: block;
+        margin: -75px auto 0 auto;
       }
     }
   }
+}
+
+.home-contact {
+  height: 365px;
+  text-align: center;
 }
