@@ -17,40 +17,40 @@ Template Name: Eclipse Home
 
 <?php get_header(); ?>
 
-<!-- home hero -->
-<section class="home-hero d-flex align-items-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-logo.svg" alt="Eclipse Global Resources">
-				<h2>global resources</h2>
-			</div>
-		</div>
-	</div>
-</section>
+  <!-- home hero -->
+  <section class="home-hero d-flex align-items-center">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
+  				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-logo.svg" alt="Eclipse Global Resources">
+  				<h2>global resources</h2>
+  			</div>
+  		</div>
+  	</div>
+  </section>
 
-<!-- intro -->
-<section class="intro">
-	<div class="container">
-		<div class="row">
-      <div class="col-sm-4">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources">
+  <!-- intro -->
+  <section class="intro">
+  	<div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources">
+          </div>
+          <div class="col-4">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources">
+          </div>
+          <div class="col-4">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
+          </div>
       </div>
-      <div class="col-sm-4">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources">
+      <div class="row">
+        <div class="col-12">
+          <h2>headline</h2>
+          <p>With a combined 25+ years of experience in the wireless and technology industries, our range includes staffing, services, and vendor management with a focus on IT, Engineering, and Project/Program Management.</p>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
-      </div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<h2>headline</h2>
-				<p>With a combined 25+ years of experience in the wireless and technology industries, our range includes staffing, services, and vendor management with a focus on IT, Engineering, and Project/Program Management.</p>
-			</div>
-		</div>
-	</div>
-</section>
+    </div>
+  </section>
 
 <section class="home-bg-one"></section>
 
