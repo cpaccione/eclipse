@@ -65,8 +65,10 @@ Template Name: Eclipse Home
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>our solutions</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="wrap">
+            <h2>our solutions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -77,25 +79,31 @@ Template Name: Eclipse Home
         <div class="col-sm-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-            <h3>Staffing Solutions</h3>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-            <button type="button" name="button">learn more</button>
+            <div class="copy-wrap">
+              <h3>Staffing Solutions</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+              <a class="link-button" href="#">learn more</a>
+            </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-            <h3>Service Solutions</h3>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-            <button type="button" name="button">learn more</button>
+            <div class="copy-wrap">
+              <h3>Service Solutions</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+              <a class="link-button" href="#">learn more</a>
+            </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
-            <h3>Strategic Solutions</h3>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-            <button type="button" name="button">learn more</button>
+            <div class="copy-wrap">
+              <h3>Strategic Solutions</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+              <a class="link-button" href="#">learn more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -109,8 +117,10 @@ Template Name: Eclipse Home
     <div class="row">
       <div class="col-12">
         <h2>ready to work with us?</h2>
-        <p>Let's get started on building great things. Browse our list of current opening or <a href="#">contact us today!</a></p>
-        <a href="#">view opportunities</a>
+        <div class="wrap">
+          <p>Let's get started on building great things. Browse our list of current opening or <a href="#">contact us today!</a></p>
+        </div>
+        <a class="link-button-two" href="#">view opportunities</a>
       </div>
     </div>
   </div>
