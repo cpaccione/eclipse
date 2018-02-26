@@ -5,6 +5,7 @@
 
 header {
   background-color: $white;
+  height: 73px;
 }
 
 .site-title {
@@ -12,4 +13,36 @@ header {
         width: 158px;
         height: 36px;
     }
+}
+
+.navbar-brand {
+  h1, p {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-nav {
+  .link-button {
+    margin-right: 20px;
+    background-color: $purple;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $purple;
+      border-color: $purple;
+    }
+  }
+}
+
+.button-nav {
+  @include responsive(max-width, 500px) {
+    display: none;
+  }
+}
+
+#nav-toggle {
+  @include responsive(max-width, 500px) {
+    display: block;
+  }
 }

@@ -49,6 +49,9 @@
 							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eclipse-logo.svg" alt="Eclipse Global Resources"></a></p>
 						<?php endif; ?>
 			</div><!-- .site-branding -->
-			<a id="nav-toggle"><span></span></a>
-
+			<ul class="navbar-nav flex-row">
+				<li class="button-nav"><a class="link-button" href="#">opportunities</a></li>
+				<li><a id="nav-toggle"><span></span></a></li>
+			</ul>
+			<!-- <a id="nav-toggle" class="mobile-button"><span></span></a> -->
 		</header><!-- #masthead -->
