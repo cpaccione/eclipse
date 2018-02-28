@@ -133,8 +133,104 @@
 // Solutions template
 .solutions-hero {
   background-color: $bg-grey;
+  height: 310px;
 
   h1 {
     color: $purple;
+  }
+}
+
+.solutions {
+  height: 300px;
+  background: $blue;
+  background: linear-gradient($blue, $blue-gradient);
+
+  .container {
+    position: relative;
+    top: -90px;
+  }
+
+  .icon-row {
+    .wrap {
+      text-align: center;
+      background-color: $white;
+      border-radius: 8px;
+      height: 338px;
+
+      img {
+        width: 150px;
+        height: 150px;
+        // display: block;
+        margin: -75px auto 0 auto;
+      }
+
+      .copy-wrap {
+        max-width: 250px;
+        margin: 0 auto;
+        padding-top: 25px;
+
+        h3 {
+          color: $blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// Single Solutions Hero
+.single-solutions-hero {
+  text-align: center;
+
+  img {
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.solutions-info {
+  background: $blue;
+  background: linear-gradient($blue, $blue-gradient);
+}
+
+.solutions-single-icons {
+  background: $bg-grey;
+
+  .icon-row {
+    .icon-wrap {
+      background-color: $white;
+      height: 75px;
+
+      img {
+        width: 150px;
+        height: 150px;
+        // display: block;
+        margin: 0 auto 0 auto;
+        position: absolute;
+        top: -75px;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .wrap {
+      text-align: center;
+      background-color: $white;
+      border-radius: 8px;
+      // height: 338px;
+
+      .copy-wrap {
+        max-width: 250px;
+        margin: 0 auto;
+        padding-top: 25px;
+
+        h3 {
+          color: $blue;
+          font-weight: 700;
+        }
+      }
+    }
   }
 }
