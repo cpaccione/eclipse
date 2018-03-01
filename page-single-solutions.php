@@ -91,6 +91,30 @@ Template Name: Single Solutions
   <section class="solutions-single-icons">
     <div class="container">
       <div class="row icon-row">
+				<div class="col-12">
+					<ul class="solutions_icons">
+						<li>          <div class="icon-wrap">
+						            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
+						          </div>
+						          <div class="wrap">
+						            <div class="copy-wrap">
+						              <h3>Staffing Solutions</h3>
+						              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+						              <a class="link-button" href="#">learn more</a>
+						            </div>
+						          </div></li>
+						<li>          <div class="icon-wrap">
+						            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
+						          </div>
+						          <div class="wrap">
+						            <div class="copy-wrap">
+						              <h3>Service Solutions</h3>
+						              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
+						              <a class="link-button" href="#">learn more</a>
+						            </div>
+						          </div></li>
+					</ul>
+				</div>
         <div class="col-sm-6">
           <div class="icon-wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">

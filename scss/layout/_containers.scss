@@ -145,6 +145,10 @@
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
 
+  .solutions_icons {
+    display: inline-block;
+  }
+
   .container {
     position: relative;
     top: -90px;
