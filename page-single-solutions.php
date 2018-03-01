@@ -24,7 +24,47 @@ Template Name: Single Solutions
 </section>
 
 <section class="solutions-info">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>Contact</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>Contract-to-Direct</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>Direct Hire</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
+			</div>
+		</div>
+	</div>
 </section>
 
 
