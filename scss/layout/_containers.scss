@@ -191,8 +191,41 @@
 }
 
 .solutions-info {
+  padding: 45px 0 45px 0;
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
+
+  .header_solutions {
+    background-color: $grey;
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px;
+    padding: 20px;
+
+    h3 {
+      font-weight: 700;
+      color: $purple;
+    }
+  }
+  //
+  // .col-md-8, .col-md-4 {
+  //   background-color: white;
+  // }
+
+  .body_solutions {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius:8px;
+    margin-bottom: 20px;
+    background-color: $white;
+
+    p {
+      padding: 34px 0px 77px 56px;
+    }
+
+    img {
+      position: relative;
+      top: -50px;
+    }
+  }
 }
 
 .solutions-single-icons {
