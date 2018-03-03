@@ -93,6 +93,7 @@ Template Name: Single Solutions
       <div class="row icon-row">
 				<div class="col-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<!-- single solutions list -->
 					<ul class="single-solutions-list">
 						<li>
@@ -126,6 +127,8 @@ Template Name: Single Solutions
 
         <!-- <div class="col-sm-6">
 =======
+=======
+>>>>>>> 9887fdc271f94f783c566566ede91ec4ffd355b6
 					<ul class="solutions_icons">
 						<li>          <div class="icon-wrap">
 						            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
