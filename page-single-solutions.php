@@ -87,13 +87,12 @@ Template Name: Single Solutions
 	</div>
 </section>
 
-
+	<!-- single solutions icon row -->
   <section class="solutions-single-icons">
     <div class="container">
       <div class="row icon-row">
+				<!-- col 12 -->
 				<div class="col-12">
-<<<<<<< HEAD
-<<<<<<< HEAD
 					<!-- single solutions list -->
 					<ul class="single-solutions-list">
 						<li>
@@ -122,61 +121,6 @@ Template Name: Single Solutions
 						</li>
 					</ul>
 				</div>
-
-
-
-        <!-- <div class="col-sm-6">
-=======
-=======
->>>>>>> 9887fdc271f94f783c566566ede91ec4ffd355b6
-					<ul class="solutions_icons">
-						<li>          <div class="icon-wrap">
-						            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-						          </div>
-						          <div class="wrap">
-						            <div class="copy-wrap">
-						              <h3>Staffing Solutions</h3>
-						              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-						              <a class="link-button" href="#">learn more</a>
-						            </div>
-						          </div></li>
-						<li>          <div class="icon-wrap">
-						            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-						          </div>
-						          <div class="wrap">
-						            <div class="copy-wrap">
-						              <h3>Service Solutions</h3>
-						              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-						              <a class="link-button" href="#">learn more</a>
-						            </div>
-						          </div></li>
-					</ul>
-				</div>
-        <div class="col-sm-6">
->>>>>>> 9887fdc271f94f783c566566ede91ec4ffd355b6
-          <div class="icon-wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-          </div>
-          <div class="wrap">
-            <div class="copy-wrap">
-              <h3>Staffing Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="icon-wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-          </div>
-          <div class="wrap">
-            <div class="copy-wrap">
-              <h3>Service Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
