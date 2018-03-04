@@ -87,17 +87,16 @@ Template Name: Single Solutions
 	</div>
 </section>
 
-	<!-- single solutions icon row -->
   <section class="solutions-single-icons">
     <div class="container">
       <div class="row icon-row">
-				<!-- col 12 -->
 				<div class="col-12">
 					<!-- single solutions list -->
 					<ul class="single-solutions-list">
+
 						<li>
 							<div class="icon-wrap">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclipse Global Resources heart handshake icon">
 							</div>
 							<div class="wrap">
 								<div class="copy-wrap">
@@ -107,9 +106,10 @@ Template Name: Single Solutions
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="icon-wrap">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclipse Global Resources gear icon">
 							</div>
 							<div class="wrap">
 								<div class="copy-wrap">
@@ -119,6 +119,7 @@ Template Name: Single Solutions
 								</div>
 							</div>
 						</li>
+
 					</ul>
 				</div>
       </div>
