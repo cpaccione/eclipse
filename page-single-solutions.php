@@ -14,10 +14,21 @@ Template Name: Single Solutions
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
+				<?php
+
+				$page_icon = get_field('page_icon');
+
+				if( !empty($page_icon) ): ?>
+
+					<img src="<?php echo $page_icon['url']; ?>" alt="<?php echo $page_icon['alt']; ?>">
+
+				<?php endif; ?>
+
 				<?php the_title('<h1>', '</h1>'); ?>
-        <p>Contract / Contract-to-Direct / Direct Hire</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				<div class="wrap">
+					<p class="sub-sections"><?php the_field('solutions_sub_sections'); ?></p>
+					<p><?php the_field('solutions_section_intro'); ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -26,112 +37,94 @@ Template Name: Single Solutions
 <section class="solutions-info">
 	<div class="container">
 
-	<section class="header_solutions">
-		<div class="row">
-			<div class="col-12">
-				<div class="wrap">
-					<h3><i class="fas fa-check"></i> Contact</h3>
-				</div>
-			</div>
-		</div>
-	</section>
+		<?php if( have_rows('solutions_repeater_body') ):  ?>
 
-	<section class="body_solutions">
-			<div class="row">
-					<div class="col-md-8">
-						<div class="wrap">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+			<?php while( have_rows('solutions_repeater_body') ): the_row();
+
+				//vars
+				$title = get_sub_field('title');
+				$body = get_sub_field('body');
+				$image = get_sub_field('image');
+
+				?>
+
+				<section class="header_solutions">
+					<div class="row">
+						<div class="col-12">
+							<div class="wrap">
+								<h3><span class="h_solutions_icons"><i class="fas fa-check"></i></span> <?php echo $title; ?></h3>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="wrap">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
+				</section>
+
+				<section class="body_solutions">
+						<div class="row">
+								<div class="col-md-8">
+									<div class="wrap">
+										<p><?php echo $body; ?></p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="wrap">
+										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+									</div>
+								</div>
 						</div>
-					</div>
-			</div>
-	</section>
-	<section class="header_solutions">
-		<div class="row">
-			<div class="col-12">
-					<h3><i class="fas fa-check"></i> Contact-to-Direct</h3>
-			</div>
-		</div>
-	</section>
-	<section class="body_solutions">
-			<div class="row">
-					<div class="col-md-8">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-					</div>
-					<div class="col-md-4">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
-					</div>
-			</div>
-	</section>
-	<section class="header_solutions">
-		<div class="row">
-			<div class="col-12">
-					<h3><i class="fas fa-check"></i> Direct Hire</h3>
-			</div>
-		</div>
-	</section>
-	<section class="body_solutions">
-			<div class="row">
-					<div class="col-md-8">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-					</div>
-					<div class="col-md-4">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-temp-solutions.png" alt="">
-					</div>
-			</div>
-	</section>
+				</section>
+
+			<?php endwhile; ?>
+
+		<?php endif; ?>
 	</div>
 </section>
 
+					<?php if(have_rows('solutions_repeater_links')): ?>
   <section class="solutions-single-icons">
     <div class="container">
       <div class="row icon-row">
 				<div class="col-12">
 					<!-- single solutions list -->
 					<ul class="single-solutions-list">
+						<?php while(have_rows('solutions_repeater_links')): the_row();
+
+							// vars
+							$icon_s = get_sub_field('icon');
+							$title_s = get_sub_field('title');
+							$body_s = get_sub_field('body');
+							$link_s = get_sub_field('link');
+
+
+						?>
 
 						<li>
 							<div class="icon-wrap">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclipse Global Resources heart handshake icon">
+								<img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
 							</div>
 							<div class="wrap">
 								<div class="copy-wrap">
-									<h3>Staffing Solutions</h3>
-									<p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-									<a class="link-button" href="#">learn more</a>
+									<h3><?php echo $title_s; ?></h3>
+									<p><?php echo $body_s; ?></p>
+									<a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
 								</div>
 							</div>
 						</li>
-
-						<li>
-							<div class="icon-wrap">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclipse Global Resources gear icon">
-							</div>
-							<div class="wrap">
-								<div class="copy-wrap">
-									<h3>Service Solutions</h3>
-									<p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-									<a class="link-button" href="#">learn more</a>
-								</div>
-							</div>
-						</li>
+					<?php endwhile ?>
 
 					</ul>
 				</div>
       </div>
     </div>
   </section>
+					<?php endif; ?>
+
 
   <section class="solutions-questions">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2>have questions?</h2>
-          <a class="link-button-two" href="#">contact us today</a>
+          <a class="link-button-two" href="<?php the_field('questions_link'); ?>">contact us today</a>
         </div>
       </div>
     </div>

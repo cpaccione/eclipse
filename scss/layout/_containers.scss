@@ -184,13 +184,26 @@
 
 // Single Solutions Hero
 .single-solutions-hero {
+  padding: 88px 0 54px 0;
+  background: $bg-grey;
   text-align: center;
 
   img {
     width: 124px;
     height: 124px;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     display: block;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+
+    .sub-sections {
+      color: $blue;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -203,10 +216,15 @@
     background-color: $grey;
     border-top-left-radius: 8px;
     border-top-right-radius:8px;
-    padding: 20px;
+    padding: 25px 20px 25px 20px;
+
+    .h_solutions_icons {
+      color: $blue;
+    }
 
     h3 {
       font-weight: 700;
+      margin-bottom: 0;
       color: $purple;
     }
   }
@@ -222,12 +240,30 @@
     background-color: $white;
 
     p {
-      padding: 34px 0px 77px 56px;
+      padding: 25px;
+
+      @include responsive(min-width, 768px) {
+        padding: 34px 0px 77px 56px;
+      }
     }
 
     img {
-      position: relative;
-      top: -50px;
+      display: block;
+      margin: 0 auto;
+      padding: 25px 0 25px 0;
+      width: 236px;
+      height: 236px;
+
+      @include responsive(min-width, 768px) {
+        padding: 0;
+        position: relative;
+        top: 28px;
+        right: 15px;
+      }
+
+      @include responsive(min-width, 992px) {
+        top: -50px;
+      }
     }
   }
 }
