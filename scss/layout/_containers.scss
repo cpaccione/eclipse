@@ -145,6 +145,76 @@
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
 
+  .single-solutions-list {
+    margin-top: 1rem;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+
+    li {
+      width: 100%;
+      display: inline-block;
+      // margin: 0 5px 0 5px;
+
+      @include responsive(min-width, 768px) {
+        // margin-bottom: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 311px;
+      }
+    }
+  }
+
+  .icon-row {
+    .icon-wrap {
+      background-color: $white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      @include responsive(min-width, 768px) {
+        height: 75px;
+      }
+
+      img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        // display: block;
+        margin: 0 auto 0 auto;
+        padding-top: 15px;
+        //position: absolute;
+
+        @include responsive(min-width, 768px) {
+          padding-top: 0;
+          position: relative;
+          top: -75px;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .wrap {
+      text-align: center;
+      background-color: $white;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      // height: 338px;
+
+      .copy-wrap {
+        max-width: 250px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 50px;
+
+        h3 {
+          color: $blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   .solutions_icons {
     display: inline-block;
   }
@@ -154,32 +224,32 @@
     top: -90px;
   }
 
-  .icon-row {
-    .wrap {
-      text-align: center;
-      background-color: $white;
-      border-radius: 8px;
-      height: 338px;
-
-      img {
-        width: 150px;
-        height: 150px;
-        // display: block;
-        margin: -75px auto 0 auto;
-      }
-
-      .copy-wrap {
-        max-width: 250px;
-        margin: 0 auto;
-        padding-top: 25px;
-
-        h3 {
-          color: $blue;
-          font-weight: 700;
-        }
-      }
-    }
-  }
+  // .icon-row {
+  //   .wrap {
+  //     text-align: center;
+  //     background-color: $white;
+  //     border-radius: 8px;
+  //     height: 338px;
+  //
+  //     img {
+  //       width: 150px;
+  //       height: 150px;
+  //       // display: block;
+  //       margin: -75px auto 0 auto;
+  //     }
+  //
+  //     .copy-wrap {
+  //       max-width: 250px;
+  //       margin: 0 auto;
+  //       padding-top: 25px;
+  //
+  //       h3 {
+  //         color: $blue;
+  //         font-weight: 700;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Single Solutions Hero
@@ -252,7 +322,7 @@
       margin: 0 auto;
       padding: 25px 0 25px 0;
       width: 236px;
-      height: 236px;
+      // height: 236px;
 
       @include responsive(min-width, 768px) {
         padding: 0;

@@ -23,21 +23,20 @@ Template Name: Solutions
 
 <section class="home-bg-one"></section>
 
-  <?php if(have_rows('solutions_repeater_links')): ?>
-     <section class="solutions-single-icons">
+  <?php if(have_rows('our_solutions_links')): ?>
+     <section class="solutions">
         <div class="container">
           <div class="row icon-row">
         <div class="col-12">
           <!-- single solutions list -->
           <ul class="single-solutions-list">
-            <?php while(have_rows('solutions_repeater_links')): the_row();
+            <?php while(have_rows('our_solutions_links')): the_row();
 
               // vars
               $icon_s = get_sub_field('icon');
               $title_s = get_sub_field('title');
               $body_s = get_sub_field('body');
               $link_s = get_sub_field('link');
-
 
             ?>
               <li>
