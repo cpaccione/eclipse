@@ -23,7 +23,44 @@ Template Name: Solutions
 
 <section class="home-bg-one"></section>
 
-  <section class="solutions">
+  <?php if(have_rows('solutions_repeater_links')): ?>
+     <section class="solutions-single-icons">
+        <div class="container">
+          <div class="row icon-row">
+        <div class="col-12">
+          <!-- single solutions list -->
+          <ul class="single-solutions-list">
+            <?php while(have_rows('solutions_repeater_links')): the_row();
+
+              // vars
+              $icon_s = get_sub_field('icon');
+              $title_s = get_sub_field('title');
+              $body_s = get_sub_field('body');
+              $link_s = get_sub_field('link');
+
+
+            ?>
+              <li>
+                <div class="icon-wrap">
+                  <img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
+                </div>
+                <div class="wrap">
+                  <div class="copy-wrap">
+                    <h3><?php echo $title_s; ?></h3>
+                    <p><?php echo $body_s; ?></p>
+                    <a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
+                  </div>
+                </div>
+              </li>
+            <?php endwhile ?>
+          </ul>
+        </div>
+          </div>
+        </div>
+     </section>
+  <?php endif; ?>
+
+<!--   <section class="solutions">
     <div class="container">
       <div class="row icon-row">
         <div class="col-sm-4">
@@ -58,6 +95,6 @@ Template Name: Solutions
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 <?php get_footer(); ?>
