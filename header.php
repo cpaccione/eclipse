@@ -55,3 +55,5 @@
 			</ul>
 			<!-- <a id="nav-toggle" class="mobile-button"><span></span></a> -->
 		</header><!-- #masthead -->
+
+		<div id="content">
