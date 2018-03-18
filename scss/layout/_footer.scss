@@ -1,11 +1,88 @@
 footer {
   background-color: $purple;
-  height: 300px;
+  color: $white;
+  // height: 300px;
 
-  .eclipse-footer-logo {
-    //height: 75.66px;
-    height: 4.72875em;
-    //width: 83.33px;
-    width: 5.208125em;
+  .row-footer {
+    height: auto;
+
+    @include responsive(min-width, 768px) {
+      height: 120px;
+    }
+
+    .e-footer-logo {
+      width: 5.208125em;
+      height: 4.72875em;
+      display: block;
+      margin: 1em auto 1em auto;
+
+      @include responsive(min-width, 768px) {
+        margin: 0 auto;
+      }
+    }
+
+    .sba {
+      max-width: 60%;
+      margin: 1em auto 1em auto;
+      display: block;
+
+      @include responsive(min-width, 768px) {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    // .footer-menu {
+    //   text-transform: uppercase;
+    // }
+
+    .footer-menu {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      text-align: center;
+ 
+      @include responsive(min-width, 768px) {
+        text-align: left;
+      }
+  
+      li {
+        display: inline-block;
+  
+        a {
+          color: $white;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 0.875rem;
+          margin: 0 1em 0 1em;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
+
+  .row-footer-two {
+    height: 130px;
+    text-align: center;
+
+    .social-media {
+      padding-left: 0;
+      margin-bottom: .5em;
+
+      li {
+        display: inline-block;
+
+        a {
+          span {
+            transition: 0.5s ease;
+            &:hover {
+              color: $white !important;
+              transition: 0.5s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

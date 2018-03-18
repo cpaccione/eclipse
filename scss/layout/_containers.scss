@@ -2,8 +2,13 @@
 .home-hero {
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
-  height: 567px;
+  padding: 100px 0 100px 0;
+  height: auto;
   text-align: center;
+
+  @include responsive(min-width, 600px) {
+    height: 567px;
+  }
 
   .hero-logo {
     max-width: 794px;
@@ -16,16 +21,21 @@
 }
 
 .intro-images {
-  padding: 75px 0 0 0;
+  display: none;
 
-  ul {
-    padding: 0;
-    text-align: center;
-    margin-top: -175px;
+  @include responsive(min-width, 600px) {
+    display: block;
+    padding: 75px 0 0 0;
 
-    li {
-      padding-right: 15px;
-      display: inline-block;
+    ul {
+      padding: 0;
+      text-align: center;
+      margin-top: -175px;
+  
+      li {
+        padding-right: 15px;
+        display: inline-block;
+      }
     }
   }
 }
@@ -44,26 +54,41 @@
 
 // background image section one
 .home-bg-one {
-  background-image: url('../images/home-bg-one.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 380px;
+  display: none;
+
+  @include responsive(min-width, 600px) {
+    display: block;
+    background: url('../images/home-bg-one.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
+  }
 }
 
 // background image section two
 .home-bg-two {
-  background-image: url('../images/home-bg-two.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 380px;
+  display: none;
+
+  @include responsive(min-width, 600px) {
+    display: block;
+    background: url('../images/home-bg-two.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
+  }
 }
 
 // background image section three
 .home-bg-three {
-  background-image: url('../images/home-bg-three.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 380px;
+  display: none;
+
+  @include responsive(min-width, 600px) {
+    display: block;
+    background: url('../images/home-bg-three.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
+  }
 }
 
 // home tempate solutions

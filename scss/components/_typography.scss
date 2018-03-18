@@ -6,10 +6,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2.625em; // 42px
+  //font-size: 2em; // 42px
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: 300;
+
+  @include responsive(min-width, 600px) {
+    font-size: 2.625em;
+  }
 }
 
 h3 {
@@ -70,4 +74,10 @@ a {
     border-color: $blue-two;
   }
 
+}
+
+.hr-one {
+ border-top: 1px solid $white;
+ margin-top: 0;
+ margin-bottom: 0;
 }
