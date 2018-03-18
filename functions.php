@@ -113,6 +113,7 @@ function eclipse_widgets_init() {
 }
 add_action( 'widgets_init', 'eclipse_widgets_init' );
 
+<<<<<<< Updated upstream
 // function add_defer_attribute($tag, $handle) {
 // 	// add script handles to the array below
 // 	$scripts_to_defer = array('font-awesome');
@@ -131,6 +132,19 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
+=======
+function add_defer_attribute($tag, $handle) {
+	// add script handles to the array below
+	$scripts_to_defer = array('font-awesome');
+
+	foreach($scripts_to_defer as $defer_script) {
+	   if ($defer_script === $handle) {
+		  return str_replace(' src', ' defer="defer" src', $tag);
+	   }
+	}
+	return $tag;
+ }
+>>>>>>> Stashed changes
 
 /**
  * Enqueue scripts and styles.
