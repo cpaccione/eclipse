@@ -41,12 +41,20 @@ Template Name: Eclipse Home
   <section class="intro-images">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <ul>
+
+        <div class="col column-left">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources">
+        </div>
+        <div class="col column-middle">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources">
+        </div>
+        <div class="col column-right">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
+          <!-- <ul>
             <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources"></li>
             <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources"></li>
             <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources"></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -83,7 +91,7 @@ Template Name: Eclipse Home
   <section class="home-solutions">
     <div class="container">
       <div class="row icon-row">
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
             <div class="copy-wrap">
@@ -93,7 +101,7 @@ Template Name: Eclipse Home
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
             <div class="copy-wrap">
@@ -103,7 +111,7 @@ Template Name: Eclipse Home
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <div class="wrap">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
             <div class="copy-wrap">

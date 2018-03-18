@@ -6,7 +6,7 @@
   height: auto;
   text-align: center;
 
-  @include responsive(min-width, 600px) {
+  @include responsive(min-width, 1024px) {
     height: 567px;
   }
 
@@ -24,9 +24,49 @@
 .intro-images {
   display: none;
 
+
   @include responsive(min-width, 600px) {
     display: block;
-    padding: 75px 0 0 0;
+    margin-top: -75px;
+    // padding: 75px 0 0 0;
+    @include responsive(min-width, 992px) {
+      margin-top: -100px;
+    }
+
+    .column-left {
+      @include responsive(min-width, 992px) {
+        padding: 0;
+      }
+
+      img {
+        float: right;
+      }
+    }
+
+    .column-middle {
+      @include responsive(min-width, 992px) {
+        padding: 0;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .column-right {
+      @include responsive(min-width, 992px) {
+        padding: 0;
+      }
+
+      img {
+        float: left;
+      }
+    }
+    // img {
+    //   margin: 0 auto;
+    //   display: block;
+    // }
 
     ul {
       padding: 0;
@@ -44,7 +84,12 @@
 // home tempate intro
 .intro {
   text-align: center;
-  height: 300px;
+  height: auto;
+  padding: 25px 0 25px 0;
+
+  @include responsive(min-width, 600px) {
+    height: 300px;
+  }
 
   .wrap {
     max-width: 690px;
@@ -96,7 +141,10 @@
 .home-solutions-background {
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
-  padding-bottom: 75px;
+
+  @include responsive(min-width, 768px) {
+    padding-bottom: 75px;
+  }
 }
 
 .home-solutions-copy {
@@ -123,7 +171,12 @@
       text-align: center;
       background-color: $white;
       border-radius: 8px;
-      height: 338px;
+      // height: 338px;
+      margin-bottom: 100px;
+
+      @include responsive(min-width, 768px) {
+        margin-bottom: 0;
+      }
 
       img {
         width: 150px;
@@ -135,7 +188,7 @@
       .copy-wrap {
         max-width: 250px;
         margin: 0 auto;
-        padding-top: 25px;
+        padding: 25px 0 50px 0;
 
         h3 {
           color: $blue;

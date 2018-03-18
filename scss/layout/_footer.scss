@@ -11,12 +11,11 @@ footer {
     }
 
     .e-footer-logo {
-      width: 5.208125em;
-      height: 4.72875em;
-      display: block;
-      margin: 1em auto 1em auto;
-
+      display: none;
       @include responsive(min-width, 768px) {
+        width: 5.208125em;
+        height: 4.72875em;
+        display: block;
         margin: 0 auto;
       }
     }
@@ -38,17 +37,18 @@ footer {
 
     .footer-menu {
       list-style: none;
-      padding: 0;
+      padding: 25px 0 0 0;
       margin-bottom: 0;
       text-align: center;
- 
+
       @include responsive(min-width, 768px) {
+        padding: 0;
         text-align: left;
       }
-  
+
       li {
         display: inline-block;
-  
+
         a {
           color: $white;
           text-decoration: none;
