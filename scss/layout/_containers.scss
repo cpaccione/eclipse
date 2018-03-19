@@ -511,19 +511,19 @@
 // About Page template
 .about {
   height: auto;
-  padding: 88px 0 54px 0;
+  padding: 50px 0 50px 0;
   background: $bg-grey;
 
-  .wrap {
-    max-width: 700px;
-    margin: 0 auto;
+  @include responsive(min-width, 768px) {
+    height: 600px;
+  }
 
     .sub-sections {
       color: $blue;
       font-weight: 700;
       margin-bottom: 0;
     }
-  }
+
 }
 
 .meet-the-team {
@@ -539,6 +539,32 @@
 .our-partners {
   background: $white;
   text-align: center;
+  height: auto;
+  padding: 3.125em 0 3.125em 0;
+
+  @include responsive(min-width, 576px) {
+    //height: 400px;
+    height: 25em;
+  }
+
+  @include responsive(min-width, 768px) {
+    //height: 567px;
+    height: 35.4375em;
+  }
+
+  .image-wrap {
+    //height: 100px;
+    height: 6.25em;
+    //width: 100px;
+    width: 6.25em;
+
+    @include responsive(min-width, 768px) {
+      //height: 182px;
+      height: 11.375em;
+      //width: 182px;
+      width: 11.375em;
+    }
+  }
 }
 
 .highlights {
