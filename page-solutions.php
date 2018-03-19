@@ -27,9 +27,6 @@ Template Name: Solutions
      <section class="solutions">
         <div class="container">
           <div class="row icon-row">
-        <!-- <div class="col-12"> -->
-          <!-- single solutions list -->
-          <!-- <ul class="single-solutions-list"> -->
             <?php while(have_rows('our_solutions_links')): the_row();
 
               // vars
@@ -39,11 +36,7 @@ Template Name: Solutions
               $link_s = get_sub_field('link');
 
             ?>
-              <!-- <li> -->
 							<div class="col-md-4">
-								<!-- <div class="icon-wrap"> -->
-
-								<!-- </div> -->
 								<div class="wrap">
 									<img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
 									<div class="copy-wrap">
@@ -52,51 +45,12 @@ Template Name: Solutions
 										<a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
 									</div>
 								</div>
-							</div>
-              <!-- </li> -->
-            <?php endwhile ?>
-          <!-- </ul> -->
-        <!-- </div> -->
+              </div>
+              
+              <?php endwhile; ?>
           </div>
         </div>
      </section>
   <?php endif; ?>
-
-<!--   <section class="solutions">
-    <div class="container">
-      <div class="row icon-row">
-        <div class="col-sm-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-            <div class="copy-wrap">
-              <h3>Staffing Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="http://localhost/eclipse/staffing-solutions/">learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-            <div class="copy-wrap">
-              <h3>Service Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
-            <div class="copy-wrap">
-              <h3>Strategic Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 <?php get_footer(); ?>

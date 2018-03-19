@@ -47,7 +47,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: $white;
+    color: $white !important;
     background-color: $purple;
     border-color: $blue;
   }

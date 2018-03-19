@@ -22,7 +22,6 @@ Template Name: Eclipse Home
   	<div class="container">
   		<div class="row">
   			<div class="col-12">
-          <!-- <img class="hero-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-logo.svg" alt="Eclipse Global Resources"> -->
           <svg class="hero-logo" title="Eclipse Global Resources" alt="Eclipse Global Resources inline SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-5855 202.579 794.007 182.458"><defs><style>.a{fill:#fff;}.b{fill:url(#a);}</style>
             <linearGradient id="a" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#00c0f2"/><stop offset="0.132" stop-color="#0bc0e2"/><stop offset="0.389" stop-color="#28c0b9"/><stop offset="0.742" stop-color="#56c077"/>
             <stop offset="1" stop-color="#7bc043"/>
@@ -50,11 +49,6 @@ Template Name: Eclipse Home
         </div>
         <div class="col column-right">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
-          <!-- <ul>
-            <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources"></li>
-            <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources"></li>
-            <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources"></li>
-          </ul> -->
         </div>
       </div>
     </div>
