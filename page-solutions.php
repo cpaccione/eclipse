@@ -27,9 +27,9 @@ Template Name: Solutions
      <section class="solutions">
         <div class="container">
           <div class="row icon-row">
-        <div class="col-12">
+        <!-- <div class="col-12"> -->
           <!-- single solutions list -->
-          <ul class="single-solutions-list">
+          <!-- <ul class="single-solutions-list"> -->
             <?php while(have_rows('our_solutions_links')): the_row();
 
               // vars
@@ -39,21 +39,24 @@ Template Name: Solutions
               $link_s = get_sub_field('link');
 
             ?>
-              <li>
-                <div class="icon-wrap">
-                  <img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
-                </div>
-                <div class="wrap">
-                  <div class="copy-wrap">
-                    <h3><?php echo $title_s; ?></h3>
-                    <p><?php echo $body_s; ?></p>
-                    <a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
-                  </div>
-                </div>
-              </li>
+              <!-- <li> -->
+							<div class="col-md-4">
+								<!-- <div class="icon-wrap"> -->
+
+								<!-- </div> -->
+								<div class="wrap">
+									<img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
+									<div class="copy-wrap">
+										<h3><?php echo $title_s; ?></h3>
+										<p><?php echo $body_s; ?></p>
+										<a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
+									</div>
+								</div>
+							</div>
+              <!-- </li> -->
             <?php endwhile ?>
-          </ul>
-        </div>
+          <!-- </ul> -->
+        <!-- </div> -->
           </div>
         </div>
      </section>

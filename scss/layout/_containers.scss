@@ -164,7 +164,7 @@
   }
 }
 
-.home-solutions {
+//.home-solutions {
 
   .icon-row {
     .wrap {
@@ -197,7 +197,8 @@
       }
     }
   }
-}
+
+//}
 
 .home-contact {
   height: 365px;
@@ -220,9 +221,14 @@
 }
 
 .solutions {
-  height: 300px;
+  height: auto;
+  padding-top: 50px;
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
+
+  @include responsive(min-width, 992px) {
+    height: 300px;
+  }
 
   .single-solutions-list {
     margin-top: 1rem;
@@ -299,8 +305,11 @@
   }
 
   .container {
-    position: relative;
-    top: -90px;
+
+    @include responsive(min-width, 768px) {
+      position: relative;
+      top: -90px;
+    }
   }
 
   // .icon-row {
