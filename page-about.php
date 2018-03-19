@@ -60,7 +60,7 @@ Template Name: About Page
 									</div>
 								</div>
               </div>
-              
+
               <!-- Modal -->
               <div class="modal fade" id="<?php echo $link_t; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -93,9 +93,9 @@ Template Name: About Page
 			  <?php $counter++; if($counter % 3 === 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
               <?php endwhile; ?>
           </div>
-   
 
-		  
+
+
   <?php endif; ?>
 	</div>
 </div>
@@ -144,7 +144,7 @@ Template Name: About Page
 	</div>
 </div>
 
-<div class="highlights">
+<div class="highlights d-flex align-items-center">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -156,13 +156,19 @@ Template Name: About Page
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.
+					<div class="wrap mx-auto">
+						<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
+					</div>
 				</div>
 				<div class="carousel-item">
-				Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.
+					<div class="wrap mx-auto">
+						<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
+					</div>
 				</div>
 				<div class="carousel-item">
-				Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.
+					<div class="wrap mx-auto">
+						<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
+					</div>
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

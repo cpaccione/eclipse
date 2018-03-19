@@ -608,8 +608,21 @@
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
   text-align: center;
+  height: auto;
+
+  @include responsive(min-width, 768px) {
+    height: 310px;
+  }
+
+  .wrap {
+    max-width: 725px;
+  }
 
   h2 {
     color: $white;
+  }
+
+  h3 {
+    color: $purple;
   }
 }
