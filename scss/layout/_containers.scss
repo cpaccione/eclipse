@@ -213,8 +213,12 @@
 // Solutions template
 .solutions-hero {
   background-color: $bg-grey;
-  padding: 113px 0 40px 0;
+  padding: 50px 0 40px 0;
 
+  @include responsive(min-width, 768px) {
+    padding: 113px 0 40px 0;
+  }
+  
   h1 {
     color: $purple;
   }
