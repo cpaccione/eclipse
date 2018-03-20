@@ -213,7 +213,7 @@
 // Solutions template
 .solutions-hero {
   background-color: $bg-grey;
-  height: 310px;
+  padding: 113px 0 40px 0;
 
   h1 {
     color: $purple;
@@ -608,7 +608,7 @@
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
   text-align: center;
-  height: auto;
+  height: 350px;
 
   @include responsive(min-width, 768px) {
     height: 310px;
