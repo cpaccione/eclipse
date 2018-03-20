@@ -26,74 +26,80 @@ Template Name: About Page
 					</div>
 				</div>
 			</header>
-
+					<!-- team section start -->
 					<div class="meet-the-team">
 						<div class="container">
+
 							<div class="row">
 								<div class="col-12">
 									<h2>meet the team</h2>
 								</div>
 							</div>
+
 							<?php if(have_rows('team_repeater')): ?>
 
 				          <div class="row icon-row">
+
 				            <?php while(have_rows('team_repeater')): the_row();
 
-								// vars
-								$photo_t = get_sub_field('photo');
-								$name_t = get_sub_field('name');
-								$title_t = get_sub_field('title');
-								$about_t = get_sub_field('about');
-								$link_t = get_sub_field('modal_name');
+											// vars
+											$photo_t = get_sub_field('photo');
+											$name_t = get_sub_field('name');
+											$title_t = get_sub_field('title');
+											$about_t = get_sub_field('about');
+											$link_t = get_sub_field('modal_name');
 
 				            ?>
-							<div class="col-md-4">
-								<div class="wrap">
-									<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
-									<div class="copy-wrap">
-										<h3><?php echo $name_t; ?></h3>
-										<h4><?php echo $title_t; ?></h4>
-										<p><?php echo $about_t; ?></p>
-										<a class="link-button" data-toggle="modal" data-target="#<?php echo $link_t; ?>">learn more</a>
-									</div>
-								</div>
-							</div>
 
-							<!-- Modal -->
-							<div class="modal fade" id="<?php echo $link_t; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h3 class="modal-title"><?php echo $name_t; ?></h3>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
+										<div class="col-md-4">
+											<div class="wrap">
+												<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
+												<div class="copy-wrap">
+													<h3><?php echo $name_t; ?></h3>
+													<h4><?php echo $title_t; ?></h4>
+													<p><?php echo $about_t; ?></p>
+													<!-- modal button -->
+													<a class="link-button" data-toggle="modal" data-target="#<?php echo $link_t; ?>">learn more</a>
+												</div>
+											</div>
 										</div>
-										<div class="modal-body">
-											<div class="container">
-												<div class="row">
-													<div class="col-5">
-														<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
+
+										<!-- Modal -->
+										<div class="modal fade" id="<?php echo $link_t; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h3 class="modal-title"><?php echo $name_t; ?></h3>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
 													</div>
-													<div class="col-7">
-														<h4><?php echo $title_t; ?></h4>
-														<p><?php echo $about_t; ?></p>
+													<div class="modal-body">
+														<div class="container">
+															<div class="row">
+																<div class="col-5">
+																	<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
+																</div>
+																<div class="col-7">
+																	<h4><?php echo $title_t; ?></h4>
+																	<p><?php echo $about_t; ?></p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
+									<?php $counter++; if($counter % 3 === 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
+								<?php endwhile; ?>
 							</div>
-						<?php $counter++; if($counter % 3 === 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
-					<?php endwhile; ?>
-				</div>
-			<?php endif; ?>
-		</div>
-	</div>
+						<?php endif; ?>
+
+		</div> <!-- container -->
+	</div> <!-- meet the team -->
 
 	<div class="our-partners d-sm-flex align-items-sm-center">
 		<div class="container">
