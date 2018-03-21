@@ -32,7 +32,7 @@ Template Name: About Page
 
 							<div class="row">
 								<div class="col-12">
-									<h2>meet the team</h2>
+									<h2 class="team-heading">meet the team</h2>
 								</div>
 							</div>
 
@@ -95,7 +95,7 @@ Template Name: About Page
 										</div> <!-- modal end -->
 									<?php $counter++; if($counter % 4 == 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
 								<?php endwhile; ?>
-							<!-- </div> -->
+							</div>
 						<?php endif; ?>
 
 		</div> <!-- container -->
