@@ -38,8 +38,6 @@ Template Name: About Page
 
 							<?php if(have_rows('team_repeater')): ?>
 
-				          <div class="row icon-row">
-
 				            <?php while(have_rows('team_repeater')): the_row();
 
 											// vars
@@ -50,6 +48,8 @@ Template Name: About Page
 											$link_t = get_sub_field('modal_name');
 
 				            ?>
+
+									<?php if($counter % 3 === 0) : echo '<div class="row icon-row">'; endif; ?>
 
 										<div class="col-md-4">
 											<div class="wrap">
@@ -93,7 +93,7 @@ Template Name: About Page
 												</div>
 											</div>
 										</div> <!-- modal end -->
-									<?php $counter++; if($counter % 4 == 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
+									<?php $counter++; if($counter % 3 == 0) :  echo '</div>'; endif; ?>
 								<?php endwhile; ?>
 							</div>
 						<?php endif; ?>
