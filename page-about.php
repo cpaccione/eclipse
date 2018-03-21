@@ -92,10 +92,10 @@ Template Name: About Page
 													</div>
 												</div>
 											</div>
-										</div>
-									<?php $counter++; if($counter % 3 === 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
+										</div> <!-- modal end -->
+									<?php $counter++; if($counter % 4 == 0) :  echo '</div> <div class="row icon-row">'; endif; ?>
 								<?php endwhile; ?>
-							</div>
+							<!-- </div> -->
 						<?php endif; ?>
 
 		</div> <!-- container -->
