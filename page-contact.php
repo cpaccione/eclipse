@@ -18,6 +18,11 @@ Template Name: Contact
 				<p>Have any questions or comments? Please get in touch. We'd love to hear from you!</p>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="contact-form">
+	<div class="container">
 		<div class="row">
 			<div class="col-12">
 
@@ -31,7 +36,6 @@ Template Name: Contact
 					endwhile;
 
 				endif;
-
 
 				?>
 

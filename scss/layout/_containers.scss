@@ -630,3 +630,35 @@
     color: $purple;
   }
 }
+
+// CONTACT PAGE
+
+// contact form 7 styles
+// span.wpcf7-list-item {
+//   display: block;
+//   margin: .5em 0 0 0;
+// }
+
+.wpcf7 input.wpcf7-text { width: 100%; } 
+.wpcf7 label { width: 100%; }
+
+textarea .wpcf7-form-control .wpcf7-textarea {
+  min-width: 100%;
+  background-color: red !importan;
+}
+
+#left {
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+}
+
+#right {
+  width: 49%;
+  float: right;
+  margin-right: 2%;
+}
+
+.clearfix {
+  display: block;
+}
