@@ -633,6 +633,14 @@
 
 // CONTACT PAGE
 
+.contact-form {
+  padding: 50px 0 50px 0;
+
+  .wrap {
+    max-width: 735px;
+  }
+}
+
 .wpcf7 {
 
   label, textarea {
@@ -680,15 +688,20 @@
     float: left;
     margin-right: 2%;
   }
-  
+
   #right {
     width: 48%;
     float: right;
     margin-right: 2%;
   }
-  
+
   .clearfix {
     display: block;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline-offset: -2px;
+    color: $blue;
   }
 
 
@@ -698,6 +711,4 @@
 // contact form 7 styles
 
 
-//.wpcf7 input.wpcf7-text { width: 100%; } 
-
-
+//.wpcf7 input.wpcf7-text { width: 100%; }
