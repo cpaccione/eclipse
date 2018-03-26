@@ -633,31 +633,71 @@
 
 // CONTACT PAGE
 
-textarea {
-  background-color: red;
+.wpcf7 {
+
+  label, textarea {
+    width: 100%;
+  }
+
+  input[type=text], input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  input[type=submit] {
+      border: 2px solid $purple;
+      text-transform: uppercase;
+      padding: 12px 35px 12px 35px;
+      border-radius: 30px;
+      display: inline-block;
+      font-size: 0.9375rem;
+      font-weight: 900;
+      color: $purple;
+      transition: 0.5s ease;
+      text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: $white !important;
+      background-color: $purple;
+      border-color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  input[type="file"] {
+    //background-color: $blue-two;
+  }
+
+  span.wpcf7-list-item {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+  #left {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  #right {
+    width: 48%;
+    float: right;
+    margin-right: 2%;
+  }
+  
+  .clearfix {
+    display: block;
+  }
+
+
 }
 
+
 // contact form 7 styles
-// span.wpcf7-list-item {
-//   display: block;
-//   margin: .5em 0 0 0;
-// }
+
 
 //.wpcf7 input.wpcf7-text { width: 100%; } 
 
 
-// #left {
-//   width: 49%;
-//   float: left;
-//   margin-right: 2%;
-// }
-
-// #right {
-//   width: 49%;
-//   float: right;
-//   margin-right: 2%;
-// }
-
-// .clearfix {
-//   display: block;
-// }
