@@ -641,6 +641,10 @@
   }
 }
 
+.wpcf7-textarea {
+  border: 2px solid $purple;
+}
+
 .wpcf7 {
 
   label, textarea {
@@ -651,6 +655,7 @@
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
+    border: 2px solid $purple;
   }
 
   input[type=submit] {
@@ -674,34 +679,38 @@
     }
   }
 
-  input[type="file"] {
-    //background-color: $blue-two;
-  }
+  // input[type="file"] {
+  //   background-color: $blue-two;
+  // }
 
-  span.wpcf7-list-item {
-    display: block;
-    margin: .5em 0 0 0;
-  }
-
-  #left {
-    width: 48%;
-    float: left;
-    margin-right: 2%;
-  }
-
-  #right {
-    width: 48%;
-    float: right;
-    margin-right: 2%;
-  }
-
-  .clearfix {
-    display: block;
+  @include responsive (min-width, 500px) {
+    span.wpcf7-list-item {
+      display: block;
+      margin: .5em 0 0 0;
+    }
+  
+    #left {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+    }
+  
+    #right {
+      width: 48%;
+      float: right;
+      margin-right: 2%;
+    }
+  
+    .clearfix {
+      display: block;
+    }
   }
 
   input:focus, textarea:focus, select:focus {
     outline-offset: -2px;
     color: $blue;
+    //outline: 0;
+    outline: 2px solid $blue;
   }
 
 
