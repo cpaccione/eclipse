@@ -110,8 +110,20 @@ function eclipse_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Job Sidebar', 'eclipse' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'eclipse' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'eclipse_widgets_init' );
+
+
 
 
 // function add_defer_attribute($tag, $handle) {
@@ -140,7 +152,7 @@ function eclipse_scripts() {
 	wp_enqueue_style( 'eclipse-main', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '', 'all' );
 	wp_enqueue_style( 'nunito-font', 'https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,800,900');
 	wp_enqueue_style( 'eclipse-css', get_template_directory_uri() . '/css/eclipse.css', array(), '1.0.0', 'all' );
-	//wp_enqueue_style( 'eclipse', get_stylesheet_uri() );
+	wp_enqueue_style( 'eclipse', get_stylesheet_uri() );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.8/js/all.js', array(), '', true );
 	wp_enqueue_script( 'eclipse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
