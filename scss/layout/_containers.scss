@@ -729,7 +729,17 @@
   .single-job-wrap {
     background-color: $white;
     max-width: 962px;
-    margin: 0 auto;
+    margin: 86px auto 0 auto;
+    padding: 50px 40px 50px 40px;
+
+    h1 {
+      text-transform: initial;
+      color: $purple;
+    }
+
+    .single_job_listing .meta .full-time {
+      background-color: $blue-two;
+    }
   }
 
 }
