@@ -688,19 +688,19 @@
       display: block;
       margin: .5em 0 0 0;
     }
-  
+
     #left {
       width: 48%;
       float: left;
       margin-right: 2%;
     }
-  
+
     #right {
       width: 48%;
       float: right;
       margin-right: 2%;
     }
-  
+
     .clearfix {
       display: block;
     }
@@ -721,3 +721,15 @@
 
 
 //.wpcf7 input.wpcf7-text { width: 100%; }
+
+// Job Page
+.single-job-container {
+  background-color: $bg-grey;
+
+  .single-job-wrap {
+    background-color: $white;
+    max-width: 962px;
+    margin: 0 auto;
+  }
+
+}
