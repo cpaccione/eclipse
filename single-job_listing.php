@@ -12,7 +12,6 @@ get_header(); ?>
 	<section class="single-job-container">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-12">
 					<div class="single-job-wrap">
 						<?php
@@ -30,9 +29,7 @@ get_header(); ?>
 							endwhile; // End of the loop.
 						?>
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 	</section>
