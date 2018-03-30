@@ -723,18 +723,28 @@
 //.wpcf7 input.wpcf7-text { width: 100%; }
 
 // Job Page
+.opp-main {
+  padding: 50px 0 100px 0;
+}
+
 .single-job-container {
   background-color: $bg-grey;
 
   .single-job-wrap {
     background-color: $white;
-    max-width: 962px;
-    margin: 86px auto 0 auto;
-    padding: 50px 40px 50px 40px;
+    //max-width: 962px;
+    max-width: 60.125em;
+    margin: 5.375em auto 3.125em auto;
+    padding: 3.125em 2.5em 3.125em 2.5em;
 
-    h1 {
+    .entry-title {
       text-transform: initial;
       color: $purple;
+      font-size: 2em;
+
+      @include responsive(min-width, 600px) {
+        font-size: 2.625em;
+      }
     }
 
     .single_job_listing .meta .full-time {

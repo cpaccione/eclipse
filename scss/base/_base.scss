@@ -3,3 +3,103 @@ body {
   font-weight: 400;
   color: $body;
 }
+
+/*--------------------------------------------------------------
+4.0 Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.entry-footer:before,
+.entry-footer:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after,
+.nav-links:before,
+.nav-links:after,
+.pagination:before,
+.pagination:after,
+.comment-author:before,
+.comment-author:after,
+.widget-area:before,
+.widget-area:after,
+.widget:before,
+.widget:after,
+.comment-meta:before,
+.comment-meta:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.entry-footer:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after,
+.nav-links:after,
+.pagination:after,
+.comment-author:after,
+.widget-area:after,
+.widget:after,
+.comment-meta:after {
+	clear: both;
+}
+
+/* Post Navigation */
+
+.post-navigation .nav-links {
+	padding: 1em 0;
+}
+
+.nav-subtitle {
+	background: transparent;
+	color: #767676;
+	display: block;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	letter-spacing: 0.1818em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+.nav-title {
+	color: #333;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.post-navigation .nav-next {
+	margin-top: 1.5em;
+}
+
+.nav-links .nav-previous .nav-title .nav-title-icon-wrapper {
+	margin-right: 0.5em;
+}
+
+.nav-links .nav-next .nav-title .nav-title-icon-wrapper {
+	margin-left: 0.5em;
+}
+
+.single-job-wrap {
+  .nav-previous, .nav-next {
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $blue;
+
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
