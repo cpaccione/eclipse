@@ -192,3 +192,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// WordPress Admin Bar
+//de-register _admin_bar_bump_cb default behavior
+function my_filter_head() {
+	remove_action('wp_head', '_admin_bar_bump_cb');   
+  }
+  add_action('get_header', 'my_filter_head');

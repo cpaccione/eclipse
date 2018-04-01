@@ -131,8 +131,8 @@
   position: fixed;
   top: 0;
   right: -250px;
-  background: #343434;
-  font-size: .8em;
+  background: $grey;
+  //font-size: .8em;
   font-weight: 300;
   transition: all .3s ease;
 }
@@ -143,23 +143,24 @@
   list-style: none;
 }
 
-.off-canvas-menu nav ul li:first-of-type {
-  border-top: 1px solid #565656;
-}
+// .off-canvas-menu nav ul li:first-of-type {
+//   border-top: 1px solid #565656;
+// }
 
-.off-canvas-menu nav ul li {
-  border-bottom: 1px solid #565656;
-}
+// .off-canvas-menu nav ul li {
+//   border-bottom: 1px solid #565656;
+// }
 
 .off-canvas-menu nav ul li a {
   padding: 10px 20px;
   display: block;
-  color: #fff;
+  color: $purple;
   text-decoration: none;
 }
 
 .off-canvas-menu nav ul li a:hover {
-  background: #454545;
+  background: $blue;
+  color: $white;
 }
 /* JavaScript toggle */
 

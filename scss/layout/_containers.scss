@@ -753,3 +753,36 @@
   }
 
 }
+
+
+// Blog Styles
+article {
+  margin-bottom: 3.25em;
+
+  @include responsive(min-width, 600px) {
+    margin-bottom: 5.25em;
+  }
+
+  @include responsive(min-width, 1200px) {
+    margin-bottom: 7.0em;
+  }
+
+  h2 {
+    a {
+      color: $blue;
+      font-size: 1.4375rem;
+      text-decoration: none;
+      text-transform: initial;
+    }
+  }
+
+  .entry-meta {
+    color: $purple;
+    font-style: italic;
+    font-size: 0.9375rem;
+  }
+}
+
+.single-wrap {
+  padding: 4em 0 4em 0;
+}
