@@ -69,7 +69,7 @@
 			</div>
 			<!-- .site-branding -->
 			<ul class="navbar-nav flex-row">
-				<li class="button-nav"><a class="link-button" href="http://localhost/eclipse/opportunities">opportunities</a></li>
+				<li class="button-nav"><a class="link-button" href="/opportunities">opportunities</a></li>
 				<li><a id="nav-toggle"><span></span></a></li>
 			</ul>
 			<!-- <a id="nav-toggle" class="mobile-button"><span></span></a> -->
