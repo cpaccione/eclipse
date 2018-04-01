@@ -769,10 +769,21 @@ article {
 
   h2 {
     a {
-      color: $blue;
+      //color: $blue;
       font-size: 1.4375rem;
       text-decoration: none;
       text-transform: initial;
+
+      // &:hover {
+      //   color: $purple;
+      // }
+    }
+  }
+
+  a {
+    color: $blue;
+    &:hover {
+      color: $purple;
     }
   }
 
@@ -785,4 +796,9 @@ article {
 
 .single-wrap {
   padding: 4em 0 4em 0;
+
+  h1 {
+    color: $purple;
+    text-transform: initial;
+  }
 }
