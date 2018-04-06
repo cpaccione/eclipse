@@ -35,7 +35,7 @@ Template Name: Single Solutions
 </section>
 
 <section class="solutions-info">
-	<div class="container">
+	<div style="max-width: 963px;" class="container">
 
 		<?php if( have_rows('solutions_repeater_body') ):  ?>
 
