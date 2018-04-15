@@ -1,9 +1,15 @@
+// The "wrapper" function
 module.exports = function(grunt) {
-  grunt.initConfig({
 
+  // Project and task configuration
+  grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // sass task
+    /**
+    * Grunt Sass
+    * Compile Sass to CSS using grunt-contrib-sass
+    * https://www.npmjs.com/package/grunt-contrib-sass
+    */
     sass: {
       dev: {
         options: {
@@ -11,8 +17,7 @@ module.exports = function(grunt) {
           sourcemap: 'none',
         },
         files: {
-          'style-human.css':
-          'scss/eclipse.scss'
+          'style-human.css' : 'scss/eclipse.scss'
         }
       },
       dist: {
@@ -21,25 +26,59 @@ module.exports = function(grunt) {
           sourcemap: 'none',
         },
         files: {
-          'style.css':
-          'scss/eclipse.scss'
+          'style.css' : 'scss/eclipse.scss'
         }
       }
     },
 
+    /**
+    * Grunt Contrib Watch
+    * Monitor files and execute task
+    * https://www.npmjs.com/package/grunt-contrib-watch
+    */
     watch: {
-      scripts: {
-        files: [
+      sass: {
+
+        files : [
           '**/*.scss'
         ],
-        tasks: ['sass']
+        tasks : [
+        'sass'
+        ]
+
+      },
+      scripts: {
+
+        files : [
+          'assets/js/*.js'
+        ],
+        tasks : [
+        'uglify'
+        ]
+      }
+    },
+
+    /**
+    * Grunt Contrib Uglify
+    * Monitor files and execute task
+    * https://www.npmjs.com/package/grunt-contrib-uglify
+    */
+    uglify: {
+      my_target:{
+        files: {
+          'js/scripts.js' : ['assets/js/script.js', 'assets/js/bootstrap.min.js']
+        }
       }
     }
 
   }); // initConfig
 
+  //Loading Grunt plugings and tasks
+  require('load-grunt-tasks')(grunt);
+
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['watch']);
 

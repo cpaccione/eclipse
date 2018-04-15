@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
 
+    // This is a test
     $('img').addClass('img-fluid');
 
       // Toggle navigation
