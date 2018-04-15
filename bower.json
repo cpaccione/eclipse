@@ -1,0 +1,21 @@
+{
+  "name": "ecg",
+  "description": "WordPress theme for Eclipse",
+  "main": "",
+  "authors": [
+    "Chris Paccione"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cpaccione/eclipse",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
+}

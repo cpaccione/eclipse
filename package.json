@@ -1,0 +1,20 @@
+{
+  "name": "ecg",
+  "version": "1.0.0",
+  "description": "WordPress theme for Eclipse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpaccione/eclipse.git"
+  },
+  "author": "Chris Paccione",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpaccione/eclipse/issues"
+  },
+  "homepage": "https://github.com/cpaccione/eclipse#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
