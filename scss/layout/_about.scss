@@ -1,0 +1,30 @@
+.about-section-logos {
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+
+    @include responsive(min-width, 600px) {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        @include responsive(min-width, 600px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive(min-width, 992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .logo-col {
+            height: 11.375em;
+            width: 11.375em;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+}

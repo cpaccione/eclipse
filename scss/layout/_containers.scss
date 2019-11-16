@@ -104,7 +104,7 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-one.jpg');
+    background: url('../images/home-bg-one.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -117,7 +117,7 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-two.jpg');
+    background: url('../images/home-bg-two.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -130,7 +130,7 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-three.jpg');
+    background: url('../images/home-bg-three.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -171,7 +171,7 @@
       text-align: center;
       background-color: $white;
       border-radius: 8px;
-      // height: 338px;
+      min-height: 300px;
       margin-bottom: 100px;
 
       @include responsive(min-width, 768px) {
@@ -547,6 +547,45 @@
   background: linear-gradient($blue, $blue-gradient);
   height: auto;
 
+  .modal-content {
+    border-radius: 0;
+    
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-profile-text {
+      
+      @include responsive(min-width, 600px) {
+        max-width: 75%;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+
+        @include responsive(min-width, 450px) {
+          max-width: 300px
+        }
+      }
+    }
+  
+    .modal-footer {
+      border-top: none;
+
+      button {
+        background-color: $purple;
+        border-color: $white;
+
+        &:hover {
+          background-color: $blue;
+        }
+      }
+    }
+  
+  }
+
   // @include responsive(min-width, 768px) {
   //   height: 623px;
   // }
@@ -571,10 +610,20 @@
   h4 {
     font-size: 1.2rem;
     font-weight: 700;
+    min-height: 48px;
   }
 
   .link-button {
     cursor: pointer;
+
+    &:hover {
+      color: $white !important; 
+    }
+
+    &:active, &:focus, &:visited {
+      color: $blue !important;
+    }
+
   }
 }
 
