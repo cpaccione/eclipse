@@ -3,6 +3,8 @@ jQuery(document).ready(function($) {
     // This is a test
     $('img').addClass('img-fluid');
 
+    $('.carousel-inner .carousel-item:first').addClass('active')
+
       // Toggle navigation
       $('#nav-toggle').click(function() {
         this.classList.toggle("active");

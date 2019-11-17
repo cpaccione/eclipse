@@ -149,28 +149,31 @@ Template Name: About Page
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2>success highlights</h2>
+					<h2><?php the_field('slider_title'); ?></h2>
 				</div>
 			</div>
+
+			<?php if ( have_rows('slider') ): ?>
+
 			<div class="row">
 				<div class="col-12">
 					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="wrap mx-auto">
-									<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
-								</div>
-							</div>
+							
+							<?php while( have_rows('slider') ): the_row();
+				
+								// vars
+								$highlight = get_sub_field('highlight');
+
+							?>
+
 							<div class="carousel-item">
 								<div class="wrap mx-auto">
-									<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
+									<h3><?php echo $highlight; ?></h3>
 								</div>
 							</div>
-							<div class="carousel-item">
-								<div class="wrap mx-auto">
-									<h3>Successfully staffed and managed 150 engineers, project managers and drive test resources for a Tier I OEM.</h3>
-								</div>
-							</div>
+				
+						<?php endwhile; ?>
 						</div>
 							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -183,6 +186,9 @@ Template Name: About Page
 					</div>
 				</div>
 			</div>
+			
+			<?php endif; ?>
+
 		</div>
 	</div>
 
