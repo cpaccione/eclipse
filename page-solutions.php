@@ -14,8 +14,20 @@ Template Name: Solutions
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<?php the_title('<h1>', '</h1>'); ?>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <?php the_title('<h1>', '</h1>'); ?>
+
+          <?php the_content(); ?>
+
+          <?php endwhile; else: ?>
+
+          <h1>Oh no!</h1>
+          <p>No content is appearing on this page!</p>
+
+        <?php endif; ?>
+        
 			</div>
 		</div>
 	</div>
