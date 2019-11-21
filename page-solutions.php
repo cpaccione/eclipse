@@ -13,7 +13,7 @@ Template Name: Solutions
 <section class="solutions-hero d-flex align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-sm-12 col-md-10">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -27,13 +27,17 @@ Template Name: Solutions
           <p>No content is appearing on this page!</p>
 
         <?php endif; ?>
-        
+
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="home-bg-one"></section>
+<?php if(get_field('background') ): ?>
+
+<section class="home-bg-one" style="background-image: url('<?php the_field('background'); ?>');"></section>
+
+<?php endif; ?>
 
   <?php if(have_rows('our_solutions_links')): ?>
      <section class="solutions">

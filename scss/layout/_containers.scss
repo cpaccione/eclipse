@@ -104,7 +104,7 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-one.jpg');
+    // background: url('images/home-bg-one.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -221,6 +221,13 @@
 
   h1 {
     color: $purple;
+  }
+
+  p {
+
+    @include responsive(min-width, 600px) {
+      font-size: 1.4375rem;
+    }
   }
 }
 

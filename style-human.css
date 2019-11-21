@@ -396,7 +396,6 @@ a {
 @media (min-width: 600px) {
   .home-bg-one {
     display: block;
-    background: url("images/home-bg-one.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -500,6 +499,11 @@ a {
 }
 .solutions-hero h1 {
   color: #19164e;
+}
+@media (min-width: 600px) {
+  .solutions-hero p {
+    font-size: 1.4375rem;
+  }
 }
 
 .solutions {
