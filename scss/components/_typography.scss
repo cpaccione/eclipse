@@ -21,13 +21,19 @@ h3 {
 }
 
 p {
+  font-size: 1.25rem;
   font-weight: 400;
+  margin-bottom: 0.625rem;
 }
 
 a {
   text-decoration: underline;
   font-weight: 700;
-  color: $body;
+  color: $blue;
+
+  &:hover {
+    color: $blue-two;
+  }
 }
 
 .hr-one {

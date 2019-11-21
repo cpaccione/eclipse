@@ -97,13 +97,18 @@ h3 {
 }
 
 p {
+  font-size: 1.25rem;
   font-weight: 400;
+  margin-bottom: 0.625rem;
 }
 
 a {
   text-decoration: underline;
   font-weight: 700;
-  color: #363636;
+  color: #00c0f2;
+}
+a:hover {
+  color: #33cc99;
 }
 
 .hr-one {
@@ -396,6 +401,7 @@ a {
 @media (min-width: 600px) {
   .home-bg-one {
     display: block;
+    background: url("images/home-bg-one.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -732,9 +738,12 @@ a {
   padding: 50px 0 50px 0;
   background: #f4f4f4;
 }
+.about p {
+  font-size: 1.25rem;
+}
 @media (min-width: 768px) {
   .about {
-    height: 500px;
+    height: 600px;
   }
 }
 .about .sub-sections {
