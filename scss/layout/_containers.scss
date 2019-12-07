@@ -104,7 +104,6 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-one.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -117,7 +116,6 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-two.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -130,7 +128,6 @@
 
   @include responsive(min-width, 600px) {
     display: block;
-    background: url('images/home-bg-three.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;

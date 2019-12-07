@@ -41,15 +41,23 @@ Template Name: Eclipse Home
     <div class="container">
       <div class="row">
 
-        <div class="col column-left">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-one.png" alt="Eclipse Global Resources">
-        </div>
-        <div class="col column-middle">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-two.png" alt="Eclipse Global Resources">
-        </div>
-        <div class="col column-right">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/circle-home-three.png" alt="Eclipse Global Resources">
-        </div>
+        <?php if( have_rows('hero_images') ): ?>
+
+          <?php while( have_rows('hero_images') ): the_row();
+          
+          $image = get_sub_field('circle_hero');
+          $class = get_sub_field('circle_class');
+          
+          ?>
+
+            <div class="col <?php echo $class; ?>">
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            </div>
+
+          <?php endwhile; ?>
+
+        <?php endif; ?>
+
       </div>
     </div>
   </section>
@@ -59,15 +67,19 @@ Template Name: Eclipse Home
       <div class="row">
         <div class="col-12">
           <div class="wrap">
-            <h2>headline</h2>
-            <p>With a combined 25+ years of experience in the wireless and technology industries, our range includes staffing, services, and vendor management with a focus on IT, Engineering, and Project/Program Management.</p>
+            <h2><?php the_field('hero_title'); ?></h2>
+            <p><?php the_field('hero_subtitle'); ?></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<section class="home-bg-one"></section>
+  <?php if( get_field('solutions_background_image') ): ?>
+
+    <section class="home-bg-one" style="background-image: url('<?php the_field('solutions_background_image'); ?>'); ?>"></section>
+
+  <?php endif; ?>
 
 <div class="home-solutions-background">
   <section class="home-solutions-copy d-flex align-items-center">
@@ -75,66 +87,84 @@ Template Name: Eclipse Home
       <div class="row">
         <div class="col-12">
           <div class="wrap">
-            <h2>our solutions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2><?php the_field('our_solutions_title'); ?></h2>
+            <p><?php the_field('our_solutions_subtitle');?></p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="home-solutions">
-    <div class="container">
-      <div class="row icon-row">
-        <div class="col-md-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/heart-handshake-icon.svg" alt="Eclispce Global Resources heart handshake icon">
-            <div class="copy-wrap">
-              <h3>Staffing Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
+
+
+    <?php if( have_rows('services') ): ?>
+
+      <section class="home-solutions">
+        <div class="container">
+          <div class="row icon-row">
+
+      <?php while( have_rows('services') ): the_row();
+
+        $icon = get_sub_field('icon');
+        $title = get_sub_field('title');
+        $subtitle = get_sub_field('subtitle');
+        $cta = get_sub_field('cta');
+
+        ?>
+
+          <div class="col-md-4">
+              <div class="wrap">
+                <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                <div class="copy-wrap">
+                  <h3><?php echo $title; ?></h3>
+                  <p><?php echo $subtitle; ?></p>
+                  <a class="link-button" href="<?php echo $cta; ?>">learn more</a>
+                </div>
+              </div>
             </div>
+
+      <?php endwhile; ?>
+
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/gear-icon.svg" alt="Eclipse Global Resources gear icon">
-            <div class="copy-wrap">
-              <h3>Service Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="wrap">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/lightbulb-icon.svg" alt="Eclipse Global Resources lightbulb icon">
-            <div class="copy-wrap">
-              <h3>Strategic Solutions</h3>
-              <p>Consectetur adipiscing elit, sed do eiusmod tempor lorem ipsum.</p>
-              <a class="link-button" href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+
+    <?php endif; ?>
+
 </div>
-<section class="home-bg-two"></section>
+<!-- <section class="home-bg-two"></section> -->
+
+<?php if( get_field('opportunities_image_one') ): ?>
+
+<section class="home-bg-two" style="background-image: url('<?php the_field('opportunities_image_one'); ?>'); ?>"></section>
+
+<?php endif; ?>
+
+<?php if( get_field('o_title') ): ?>
 
 <section class="home-contact d-flex align-items-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>ready to work with us?</h2>
+
+        <h2><?php the_field('o_title'); ?></h2>
+
         <div class="wrap">
-          <p>Let's get started on building great things. Browse our list of current opening or <a href="#">contact us today!</a></p>
+          <?php the_field('o_cta_copy'); ?>
         </div>
-        <a class="link-button-two" href="#">view opportunities</a>
+
+        <a class="link-button-two" href="<?php the_field('o_cta'); ?>">view opportunities</a>
+
       </div>
     </div>
   </div>
 </section>
 
-<section class="home-bg-three"></section>
+<?php endif; ?>
+
+<?php if( get_field('opportunities_image_two') ): ?>
+
+<section class="home-bg-three" style="background-image: url('<?php the_field('opportunities_image_two'); ?>'); ?>"></section>
+
+<?php endif; ?>
 
 <?php get_footer(); ?>
