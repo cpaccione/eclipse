@@ -401,7 +401,6 @@ a:hover {
 @media (min-width: 600px) {
   .home-bg-one {
     display: block;
-    background: url("images/home-bg-one.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -414,7 +413,6 @@ a:hover {
 @media (min-width: 600px) {
   .home-bg-two {
     display: block;
-    background: url("images/home-bg-two.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -427,7 +425,6 @@ a:hover {
 @media (min-width: 600px) {
   .home-bg-three {
     display: block;
-    background: url("images/home-bg-three.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -740,11 +737,6 @@ a:hover {
 }
 .about p {
   font-size: 1.25rem;
-}
-@media (min-width: 768px) {
-  .about {
-    height: 600px;
-  }
 }
 .about .sub-sections {
   color: #00c0f2;

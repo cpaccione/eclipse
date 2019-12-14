@@ -527,9 +527,9 @@
     font-size: 1.25rem;
   }
 
-  @include responsive(min-width, 768px) {
-    height: 600px;
-  }
+  // @include responsive(min-width, 768px) {
+  //   height: 600px;
+  // }
 
   .sub-sections {
     color: $blue;
