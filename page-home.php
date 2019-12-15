@@ -38,8 +38,8 @@ Template Name: Eclipse Home
   <!-- intro -->
 
   <section class="intro-images">
-    <div class="container">
-      <div class="row">
+    <!-- <div class="container"> -->
+      <div class="hero-row">
 
         <?php if( have_rows('hero_images') ): ?>
 
@@ -50,7 +50,7 @@ Template Name: Eclipse Home
           
           ?>
 
-            <div class="col <?php echo $class; ?>">
+            <div class="circle">
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
             </div>
 
@@ -58,7 +58,7 @@ Template Name: Eclipse Home
 
         <?php endif; ?>
 
-      </div>
+      <!-- </div> -->
     </div>
   </section>
 

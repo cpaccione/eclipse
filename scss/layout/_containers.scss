@@ -1,7 +1,9 @@
 // ECG home page template
 .home-hero {
-  background: $blue;
-  background: linear-gradient($blue, $blue-gradient);
+  // background: $blue;
+  // background: linear-gradient($blue, $blue-gradient);
+  background: rgb(0,192,242);
+background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 100%);
   padding: 100px 0 100px 0;
   height: auto;
   text-align: center;
@@ -26,11 +28,40 @@
 
 
   @include responsive(min-width, 600px) {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: -75px;
     // padding: 75px 0 0 0;
     @include responsive(min-width, 992px) {
       margin-top: -100px;
+    }
+
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+
+      @include responsive(min-width, 782px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .circle {
+        height: 233px;
+        width: 233px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+
+//         img {
+//           -webkit-box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+// -moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+// box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.3);
+//         }
+      }
     }
 
     .column-left {
@@ -40,6 +71,7 @@
 
       img {
         float: right;
+        max-width: 233px;
       }
     }
 
@@ -51,6 +83,7 @@
       img {
         margin: 0 auto;
         display: block;
+        max-width: 233px;
       }
     }
 
@@ -61,6 +94,7 @@
 
       img {
         float: left;
+        max-width: 233px;
       }
     }
     // img {
@@ -92,7 +126,7 @@
   }
 
   .wrap {
-    max-width: 690px;
+    max-width: 700px;
     margin: 0 auto;
   }
 
@@ -136,8 +170,8 @@
 
 // home tempate solutions
 .home-solutions-background {
-  background: $blue;
-  background: linear-gradient($blue, $blue-gradient);
+  background: #33CCCC;
+  // background: linear-gradient($blue, $blue-gradient);
 
   @include responsive(min-width, 768px) {
     padding-bottom: 75px;
@@ -202,7 +236,7 @@
   text-align: center;
 
   .wrap {
-    max-width: 470px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }

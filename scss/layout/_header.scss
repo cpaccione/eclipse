@@ -47,7 +47,7 @@
 }
 
 .button-nav {
-  @include responsive(max-width, 500px) {
+  @include responsive(max-width, 742px) {
     display: none;
   }
 }

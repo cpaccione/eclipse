@@ -14,7 +14,7 @@ Template Name: About Page
 			<header class="about d-md-flex align-items-md-center">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-7">
+						<div class="col-md-12">
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 								<?php the_title('<h1>', '</h1>'); ?>
@@ -28,9 +28,9 @@ Template Name: About Page
 
 							<?php endif; ?>
 						</div>
-						<div class="col-md-5 d-md-flex align-items-md-center">
+						<!-- <div class="col-md-5 d-md-flex align-items-md-center">
 							<img class="mx-auto d-block wob-logo" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/sba_wosb_vertical.svg" alt="SBA Women owned business logo">
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</header>

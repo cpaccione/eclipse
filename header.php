@@ -70,7 +70,8 @@
 
 			<!-- .site-branding -->
 			<ul class="nav-button">
-				<li class="button-nav"><a class="link-button" href="/opportunities">opportunities</a></li>
+				<li class="button-nav"><a class="link-button" href="/opportunities">career opportunities</a></li>
+				<li style="margin-left: 1rem;" class="button-nav"><a class="link-button" href="/contact">contact us</a></li>
 				<li class="nav-toggle-item"><a id="nav-toggle"><span></span></a></li>
 			</ul>
 			<!-- <a id="nav-toggle" class="mobile-button"><span></span></a> -->

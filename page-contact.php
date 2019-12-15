@@ -24,7 +24,7 @@ Template Name: Contact
 <section class="contact-form">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-md-6">
 				<div class="wrap">
 					<?php if ( have_posts() ) :
 
@@ -39,6 +39,9 @@ Template Name: Contact
 
 				?>
 				</div>
+			</div>
+			<div class="col-md-6">
+
 			</div>
 		</div>
 	</div>
