@@ -41,11 +41,26 @@ Template Name: Contact
 				</div>
 			</div>
 			<div class="col-md-6">
-
+				<div style="height: 75%;" id="map"></div>
+				<p>Eclipse Global Resources</p>
+				<p>HQ: Chicago, IL</p>
 			</div>
 		</div>
 	</div>
 </section>
+
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var chicago = {lat: 41.8781722, lng: -87.6649034};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 8, center: chicago});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: chicago, map: map});
+        }
+</script>
 
 
 <?php get_footer(); ?>
