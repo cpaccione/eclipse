@@ -136,6 +136,26 @@ a:hover {
   border-color: #19164e;
 }
 
+div.wpforms-container-full .wpforms-form button[type=submit] {
+  border: 2px solid #19164e;
+  text-transform: uppercase;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color: #19164e;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+  border: 2px solid #19164e;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #19164e;
+  border-color: #19164e;
+}
+
 .application_button {
   font-size: 0.9375rem !important;
 }
