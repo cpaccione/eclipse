@@ -13,9 +13,9 @@ Template Name: Opportunities
 <section class="solutions-hero d-flex align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12" >
                 <?php the_title('<h1>', '</h1>'); ?>
-                <?php the_field('hero_copy'); ?>
+                <div><?php the_field('hero_copy'); ?></div>
 			</div>
 		</div>
 	</div>

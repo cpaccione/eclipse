@@ -452,6 +452,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 380px;
   }
 }
@@ -464,6 +465,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 380px;
   }
 }
@@ -476,6 +478,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 380px;
   }
 }
