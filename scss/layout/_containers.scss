@@ -271,9 +271,9 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   background: $blue;
   background: linear-gradient($blue, $blue-gradient);
 
-  @include responsive(min-width, 992px) {
-    height: 300px;
-  }
+  // @include responsive(min-width, 992px) {
+  //   height: 300px;
+  // }
 
   .single-solutions-list {
     margin-top: 1rem;
@@ -385,6 +385,18 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   // }
 }
 
+.solutions-bg-one {
+  display: none;
+
+  @include responsive(min-width, 600px) {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+  }
+}
+
 // Single Solutions Hero
 .single-solutions-hero {
   padding: 88px 0 54px 0;
@@ -399,7 +411,7 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   }
 
   .wrap {
-    max-width: 700px;
+    max-width: 768px;
     margin: 0 auto;
 
     .sub-sections {
@@ -442,28 +454,33 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
     margin-bottom: 20px;
     background-color: $white;
 
-    p {
-      padding: 25px 15px 0 15px;
+    .wrap {
+      padding: 1.5rem;
+    }
 
-      @include responsive(min-width, 768px) {
-        padding: 34px 0px 77px 56px;
-      }
+    p {
+      padding: 0;
+      margin: 0 0 1rem 0;
+
+      // @include responsive(min-width, 768px) {
+      //   padding: 34px 0px 77px 56px;
+      // }
     }
 
     img {
       display: block;
       margin: 0 auto;
-      padding: 0 0 25px 0;
-      width: 236px;
+      padding: 0 0 0 0;
+      max-width: 236px;
       // height: 236px;
 
-      @include responsive(min-width, 768px) {
-        padding: 0;
-        position: relative;
-        // top: 28px;
-        top: -50px;
-        right: 15px;
-      }
+      // @include responsive(min-width, 768px) {
+      //   padding: 0;
+      //   position: relative;
+      //   top: 28px;
+      //   top: -50px;
+      //   right: 15px;
+      // }
 
       // @include responsive(min-width, 992px) {
       //   top: -50px;

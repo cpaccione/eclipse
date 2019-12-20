@@ -566,11 +566,6 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   background: #00c0f2;
   background: linear-gradient(#00c0f2, #33cccc);
 }
-@media (min-width: 992px) {
-  .solutions {
-    height: 300px;
-  }
-}
 .solutions .single-solutions-list {
   margin-top: 1rem;
   padding-left: 0;
@@ -640,6 +635,19 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   }
 }
 
+.solutions-bg-one {
+  display: none;
+}
+@media (min-width: 600px) {
+  .solutions-bg-one {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+  }
+}
+
 .single-solutions-hero {
   padding: 88px 0 54px 0;
   background: #f4f4f4;
@@ -652,7 +660,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   display: block;
 }
 .single-solutions-hero .wrap {
-  max-width: 700px;
+  max-width: 768px;
   margin: 0 auto;
 }
 .single-solutions-hero .wrap .sub-sections {
@@ -686,27 +694,18 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   margin-bottom: 20px;
   background-color: #ffffff;
 }
-.solutions-info .body_solutions p {
-  padding: 25px 15px 0 15px;
+.solutions-info .body_solutions .wrap {
+  padding: 1.5rem;
 }
-@media (min-width: 768px) {
-  .solutions-info .body_solutions p {
-    padding: 34px 0px 77px 56px;
-  }
+.solutions-info .body_solutions p {
+  padding: 0;
+  margin: 0 0 1rem 0;
 }
 .solutions-info .body_solutions img {
   display: block;
   margin: 0 auto;
-  padding: 0 0 25px 0;
-  width: 236px;
-}
-@media (min-width: 768px) {
-  .solutions-info .body_solutions img {
-    padding: 0;
-    position: relative;
-    top: -50px;
-    right: 15px;
-  }
+  padding: 0 0 0 0;
+  max-width: 236px;
 }
 
 .solutions-single-icons {

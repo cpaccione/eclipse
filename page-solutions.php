@@ -35,7 +35,7 @@ Template Name: Solutions
 
 <?php if(get_field('background') ): ?>
 
-<section class="home-bg-one" style="background-image: url('<?php the_field('background'); ?>');"></section>
+<section class="solutions-bg-one" style="background-image: url('<?php the_field('background'); ?>');"></section>
 
 <?php endif; ?>
 

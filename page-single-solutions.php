@@ -62,7 +62,7 @@ Template Name: Single Solutions
 						<div class="row">
 								<div class="col-md-8">
 									<div class="wrap">
-										<p><?php echo $body; ?></p>
+										<?php echo $body; ?>
 									</div>
 								</div>
 								<div class="col-md-4">
