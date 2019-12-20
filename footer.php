@@ -36,18 +36,18 @@
 							<div class="col-12">
 								<ul class="social-media">
 									<li>
-										<a href="#"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
+										<a href="https://www.facebook.com/EclipseGlobalResources/" target="_blank"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
 											<i class="far fa-circle"></i>
 											<i class="fab fa-facebook-f" data-fa-transform="shrink-8 fa-border"></i>
 										</span></a>
 									</li>
 									<li>
-										<a href="#"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
+										<a href="https://www.linkedin.com/company/eclipsellc/about/" target="_blank"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
 											<i class="far fa-circle"></i>
 											<i class="fab fa-linkedin-in" data-fa-transform="shrink-8 fa-border"></i>
 										</span></a>
 									<li>
-									<a href="#"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
+									<a href="https://twitter.com/JoinEclipse" target="_blank"><span class="fa-3x fa-fw fa-layers" style="color: #33cc99;">
 											<i class="far fa-circle"></i>
 											<i class="fab fa-twitter" data-fa-transform="shrink-8 fa-border"></i>
 									</span></a>

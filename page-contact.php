@@ -42,10 +42,13 @@ Template Name: Contact
 			</div>
 			<div class="col-md-6">
 				<div style="height: 400px;" id="map"></div>
-				<h4 style="color: #00c0f2; font-weight: bold; margin-top: 1rem;">Eclipse Global Resources</h4>
-				<p>HQ: Chicago, IL</p>
-				<p><i class="fas fa-mobile-alt"></i> 773-991-0818</p>
-				<p><i class="fas fa-envelope"></i> <a href="mailto:sales@eclipsellc.com" target="_top">sales@eclipsellc.com</a></p>
+				<div class="eclipse-contact-info">
+					<h4 style="color: #00c0f2; font-weight: bold; margin-top: 1rem;">Eclipse Global Resources</h4>
+					<p>HQ: Chicago, IL</p>
+					<p><i class="fas fa-mobile-alt"></i> 773-991-0818</p>
+					<p><i class="fas fa-envelope"></i> <a href="mailto:sales@eclipsellc.com" target="_top">sales@eclipsellc.com</a></p>
+				</div>
+
 			</div>
 		</div>
 	</div>

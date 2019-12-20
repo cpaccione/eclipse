@@ -2,8 +2,10 @@
 .home-hero {
   // background: $blue;
   // background: linear-gradient($blue, $blue-gradient);
-  background: rgb(0,192,242);
-background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 100%);
+  background: linear-gradient(rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 100%);
+  background-image: url('images/hero@2x.jpeg');
+  background-size: cover;
+  // background: rgb(0,192,242);
   padding: 100px 0 100px 0;
   height: auto;
   text-align: center;
@@ -258,10 +260,10 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   }
 
   p {
-
-    @include responsive(min-width, 600px) {
-      font-size: 1.4375rem;
-    }
+    font-size: 1rem;
+    // @include responsive(min-width, 600px) {
+    //   font-size: 1.4375rem;
+    // }
   }
 }
 
@@ -453,9 +455,19 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
     border-bottom-right-radius:8px;
     margin-bottom: 20px;
     background-color: $white;
+    padding: 1.5rem;
 
     .wrap {
-      padding: 1.5rem;
+      // padding: 1.5rem;
+    }
+
+    .featured_wrap {
+      height: 233px;
+      width: 233px;
+      position: relative;
+      border-radius: 50%;
+      display: inline-block;
+      overflow: hidden;
     }
 
     p {
@@ -578,7 +590,7 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   background: $bg-grey;
 
   p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   // @include responsive(min-width, 768px) {
@@ -608,6 +620,15 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
   text-align: center;
   background: linear-gradient($blue, $blue-gradient);
   height: auto;
+
+  .eclipse-profile-image {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+  }
 
   .modal-content {
     border-radius: 0;
@@ -750,6 +771,13 @@ background: linear-gradient(90deg, rgba(0,192,242,0.53) 0%, rgba(51,204,204,1) 1
 
   .wrap {
     max-width: 735px;
+  }
+
+  .eclipse-contact-info {
+    p {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
   }
 }
 

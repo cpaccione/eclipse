@@ -97,7 +97,7 @@ h3 {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.625rem;
 }
@@ -120,10 +120,10 @@ a:hover {
 .link-button, .application_button {
   border: 2px solid #19164e;
   text-transform: uppercase;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 25px 10px 25px;
   border-radius: 30px;
   display: inline-block;
-  font-size: 0.9375rem;
+  font-size: .7rem;
   font-weight: 900;
   color: #19164e;
   transition: 0.5s ease;
@@ -326,8 +326,9 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
 }
 
 .home-hero {
-  background: #00c0f2;
-  background: linear-gradient(90deg, rgba(0, 192, 242, 0.53) 0%, #33cccc 100%);
+  background: linear-gradient(rgba(0, 192, 242, 0.53) 0%, #33cccc 100%);
+  background-image: url("images/hero@2x.jpeg");
+  background-size: cover;
   padding: 100px 0 100px 0;
   height: auto;
   text-align: center;
@@ -554,10 +555,8 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
 .solutions-hero h1 {
   color: #19164e;
 }
-@media (min-width: 600px) {
-  .solutions-hero p {
-    font-size: 1.4375rem;
-  }
+.solutions-hero p {
+  font-size: 1rem;
 }
 
 .solutions {
@@ -693,9 +692,15 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   border-bottom-right-radius: 8px;
   margin-bottom: 20px;
   background-color: #ffffff;
-}
-.solutions-info .body_solutions .wrap {
   padding: 1.5rem;
+}
+.solutions-info .body_solutions .featured_wrap {
+  height: 233px;
+  width: 233px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
 }
 .solutions-info .body_solutions p {
   padding: 0;
@@ -786,7 +791,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   background: #f4f4f4;
 }
 .about p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .about .sub-sections {
   color: #00c0f2;
@@ -809,6 +814,14 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   text-align: center;
   background: linear-gradient(#00c0f2, #33cccc);
   height: auto;
+}
+.meet-the-team .eclipse-profile-image {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
 }
 .meet-the-team .modal-content {
   border-radius: 0;
@@ -923,6 +936,10 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
 }
 .contact-form .wrap {
   max-width: 735px;
+}
+.contact-form .eclipse-contact-info p {
+  font-size: 1rem;
+  margin-bottom: .5rem;
 }
 
 .wpcf7-textarea {

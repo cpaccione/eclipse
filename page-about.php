@@ -61,7 +61,9 @@ Template Name: About Page
 
 										<div class="col-md-4">
 											<div class="wrap">
-												<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
+												<div class="eclipse-profile-image">
+													<img src="<?php echo $photo_t['url'] ?>" alt="<?php echo['alt']; ?>">
+												</div>
 												<div class="copy-wrap">
 													<h3><?php echo $name_t; ?></h3>
 													<h4><?php echo $title_t; ?></h4>

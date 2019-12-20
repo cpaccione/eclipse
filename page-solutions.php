@@ -13,7 +13,7 @@ Template Name: Solutions
 <section class="solutions-hero d-flex align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-10">
+			<div class="col-sm-12">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

@@ -66,7 +66,7 @@ Template Name: Single Solutions
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="wrap">
+									<div class="featured_wrap">
 										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 									</div>
 								</div>
