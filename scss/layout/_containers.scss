@@ -207,7 +207,7 @@
       text-align: center;
       background-color: $white;
       border-radius: 8px;
-      min-height: 300px;
+      min-height: 365px;
       margin-bottom: 100px;
 
       @include responsive(min-width, 768px) {
@@ -413,7 +413,7 @@
   }
 
   .wrap {
-    max-width: 768px;
+    max-width: 800px;
     margin: 0 auto;
 
     .sub-sections {
@@ -457,19 +457,6 @@
     background-color: $white;
     padding: 1.5rem;
 
-    .wrap {
-      // padding: 1.5rem;
-    }
-
-    .featured_wrap {
-      height: 233px;
-      width: 233px;
-      position: relative;
-      border-radius: 50%;
-      display: inline-block;
-      overflow: hidden;
-    }
-
     p {
       padding: 0;
       margin: 0 0 1rem 0;
@@ -483,7 +470,8 @@
       display: block;
       margin: 0 auto;
       padding: 0 0 0 0;
-      max-width: 236px;
+      max-width: 75%;
+      border-radius: 50%;
       // height: 236px;
 
       // @include responsive(min-width, 768px) {
@@ -559,10 +547,11 @@
       text-align: center;
       background-color: $white;
       border-radius: 8px;
+      min-height: 250px;
       // height: 338px;
 
       .copy-wrap {
-        max-width: 250px;
+        max-width: 75%;
         margin: 0 auto;
         padding-top: 25px;
         padding-bottom: 50px;
@@ -622,12 +611,41 @@
   height: auto;
 
   .eclipse-profile-image {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .icon-row {
+    .wrap {
+      text-align: center;
+      background-color: $white;
+      border-radius: 8px;
+      min-height: 250px;
+      margin-bottom: 100px;
+
+      @include responsive(min-width, 768px) {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        // display: block;
+        margin: -75px auto 0 auto;
+      }
+
+      .copy-wrap {
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 25px 0 50px 0;
+
+        h3 {
+          color: $blue;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .modal-content {
@@ -647,6 +665,7 @@
       img {
         max-width: 100%;
         margin-bottom: 1rem;
+        border-radius: 50%;
 
         @include responsive(min-width, 450px) {
           max-width: 300px

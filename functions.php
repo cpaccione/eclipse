@@ -153,7 +153,7 @@ function eclipse_scripts() {
 	wp_enqueue_style( 'nunito-font', 'https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,800,900');
 	// wp_enqueue_style( 'eclipse-css', get_template_directory_uri() . '/css/eclipse.css', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), '', 'all');
-	wp_enqueue_style( 'eclipse', get_stylesheet_uri(), array(), '4.0.4', 'all' );
+	wp_enqueue_style( 'eclipse', get_stylesheet_uri(), array(), '5.1', 'all' );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.8/js/all.js', array(), '1.0', true );
 
 	wp_enqueue_script( 'eclipse-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

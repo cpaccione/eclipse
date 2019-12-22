@@ -511,7 +511,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   text-align: center;
   background-color: #ffffff;
   border-radius: 8px;
-  min-height: 300px;
+  min-height: 365px;
   margin-bottom: 100px;
 }
 @media (min-width: 768px) {
@@ -659,7 +659,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   display: block;
 }
 .single-solutions-hero .wrap {
-  max-width: 768px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .single-solutions-hero .wrap .sub-sections {
@@ -694,14 +694,6 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   background-color: #ffffff;
   padding: 1.5rem;
 }
-.solutions-info .body_solutions .featured_wrap {
-  height: 233px;
-  width: 233px;
-  position: relative;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
-}
 .solutions-info .body_solutions p {
   padding: 0;
   margin: 0 0 1rem 0;
@@ -710,7 +702,8 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   display: block;
   margin: 0 auto;
   padding: 0 0 0 0;
-  max-width: 236px;
+  max-width: 75%;
+  border-radius: 50%;
 }
 
 .solutions-single-icons {
@@ -766,9 +759,10 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   text-align: center;
   background-color: #ffffff;
   border-radius: 8px;
+  min-height: 250px;
 }
 .solutions-single-icons .icon-row .wrap .copy-wrap {
-  max-width: 250px;
+  max-width: 75%;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 50px;
@@ -815,13 +809,34 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
   background: linear-gradient(#00c0f2, #33cccc);
   height: auto;
 }
-.meet-the-team .eclipse-profile-image {
-  height: 150px;
-  width: 150px;
-  position: relative;
+.meet-the-team .eclipse-profile-image img {
   border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
+}
+.meet-the-team .icon-row .wrap {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  min-height: 250px;
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .meet-the-team .icon-row .wrap {
+    margin-bottom: 0;
+  }
+}
+.meet-the-team .icon-row .wrap img {
+  width: 150px;
+  height: 150px;
+  margin: -75px auto 0 auto;
+}
+.meet-the-team .icon-row .wrap .copy-wrap {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
+}
+.meet-the-team .icon-row .wrap .copy-wrap h3 {
+  color: #00c0f2;
+  font-weight: 700;
 }
 .meet-the-team .modal-content {
   border-radius: 0;
@@ -838,6 +853,7 @@ div.wpforms-container-full .wpforms-form button[type=submit]:hover {
 .meet-the-team .modal-content .modal-profile-text img {
   max-width: 100%;
   margin-bottom: 1rem;
+  border-radius: 50%;
 }
 @media (min-width: 450px) {
   .meet-the-team .modal-content .modal-profile-text img {

@@ -83,9 +83,7 @@ Template Name: Single Solutions
 		 <section class="solutions-single-icons">
 		    <div class="container">
 		      <div class="row icon-row">
-				<div class="col-12">
-					<!-- single solutions list -->
-					<ul class="single-solutions-list">
+				  
 						<?php while(have_rows('solutions_repeater_links')): the_row();
 
 							// vars
@@ -96,7 +94,7 @@ Template Name: Single Solutions
 
 
 						?>
-							<li>
+							<div class="col-md-6">
 								<div class="icon-wrap">
 									<img src="<?php echo $icon_s['url'] ?>" alt="<?php echo['alt']; ?>">
 								</div>
@@ -107,10 +105,9 @@ Template Name: Single Solutions
 										<a class="link-button" href="<?php echo $link_s; ?>">learn more</a>
 									</div>
 								</div>
-							</li>
+							</div>
 						<?php endwhile ?>
-					</ul>
-				</div>
+
 		      </div>
 		    </div>
 		 </section>

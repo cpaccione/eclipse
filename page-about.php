@@ -67,7 +67,7 @@ Template Name: About Page
 												<div class="copy-wrap">
 													<h3><?php echo $name_t; ?></h3>
 													<h4><?php echo $title_t; ?></h4>
-													<p><?php //echo $about_t; ?></p>
+													<!-- <p><?php //echo $about_t; ?></p> -->
 													<!-- modal button -->
 													<a class="link-button" data-toggle="modal" data-target="#<?php echo $link_t; ?>">learn more</a>
 												</div>
